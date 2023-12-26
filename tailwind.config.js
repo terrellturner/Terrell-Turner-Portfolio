@@ -9,6 +9,9 @@ export default {
       "off-white": "#F2F2F2",
       "dark-grey": "#262626",
     },
+    gridTemplateRows: {
+      "1fr-auto": "auto 1fr",
+    },
     extend: {},
   },
   plugins: [],

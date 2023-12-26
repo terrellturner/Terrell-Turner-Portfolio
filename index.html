@@ -9,13 +9,41 @@
   <title>Terrell Turner</title>
 </head>
 
-<body class="grid min-h-screen grid-rows-[auto_1fr] bg-off-white">
-  <header class="w-full h-28 bg-dark-grey">
-    <img src="" alt="">
-    <nav></nav>
+<body class="grid min-h-screen grid-rows-1fr-auto bg-off-white">
+  <header class="grid w-full h-screen grid-rows-1fr-auto">
+    <nav class="grid grid-cols-2 h-22 bg-dim-green">
+      <span class="grid w-24 h-24 grid-cols-1 my-auto"><img src="./imgs/TT5.svg" alt=""
+          class="w-16 h-16 my-auto justify-self-center"></span>
+      <ul class="hidden"></ul>
+      <div id="hamburger" class="my-auto justify-self-end">
+        <span class="block w-12 h-1 m-3 bg-off-white"></span>
+        <span class="block w-12 h-1 m-3 bg-off-white"></span>
+        <span class="block w-12 h-1 m-3 bg-off-white"></span>
+      </div>
+      <div id="mobile-nav" class="hidden"></div>
+    </nav>
+    <section id="hero" class="h-full bg-off-white">
+      <div class="my-auto mt-10 ml-10 w-72">
+        <h1 class="text-5xl w-38">Hello!</h1>
+        <h2 class="text-5xl">My name is Terrell.</h2>
+        <h3 class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, cum ea! Sint eveniet
+          aliquid in at ullam voluptatibus ea similique quis exercitationem magnam, laborum tempora neque reiciendis
+          dolorum odio eos! </h3>
+      </div>
+      <img class="absolute bottom-0" src="./imgs/3dlandlit.png" alt="">
+    </section>
   </header>
-  <main class="w-full h-full m-auto bg-dark-green">
-    <section class="h-full min-w-max "></section>
+  <main class="grid w-full h-full grid-cols-1 m-auto">
+    <section id="projects" class="grid h-screen grid-cols-1 bg-dark-green">
+      <div class="w-5/6 m-auto h-4/6 bg-light-green"></div>
+    </section>
+    <section id="skills-tech" class="grid h-screen grid-cols-1 bg-light-green">
+      <figure class="w-11/12 m-auto bg-dim-green h-5/6"></figure>
+    </section>
+    <section id="contact" class="grid h-screen grid-cols-1">
+      <h4 class="h-10">Want to get in touch?</h4>
+      <form id="contact" class="h-full bg-dark-green"><input class="w-3/4 h-1/6 bg-light-green"></form>
+    </section>
   </main>
   <footer></footer>
 </body>
