@@ -12,8 +12,9 @@
 <body class="grid min-h-screen grid-rows-1fr-auto bg-off-white">
   <header class="grid w-full h-screen grid-rows-1fr-auto">
     <nav class="grid grid-cols-2 h-22 bg-dim-green">
-      <span class="grid w-24 h-24 grid-cols-1 my-auto"><img src="./imgs/TT5.svg" alt=""
-          class="w-16 h-16 my-auto justify-self-center"></span>
+      <span class="grid w-24 h-24 grid-cols-1 my-auto">
+        <svg></svg>
+      </span>
       <ul class="hidden"></ul>
       <div id="hamburger" class="my-auto justify-self-end">
         <span class="block w-12 h-1 m-3 bg-off-white"></span>
@@ -22,23 +23,36 @@
       </div>
       <div id="mobile-nav" class="hidden"></div>
     </nav>
-    <section id="hero" class="h-full bg-off-white">
-      <div class="my-auto mt-10 ml-10 w-72">
-        <h1 class="text-5xl w-38">Hello!</h1>
-        <h2 class="text-5xl">My name is Terrell.</h2>
-        <h3 class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, cum ea! Sint eveniet
-          aliquid in at ullam voluptatibus ea similique quis exercitationem magnam, laborum tempora neque reiciendis
-          dolorum odio eos! </h3>
+    <section id="hero" class="relative h-full overflow-hidden bg-off-white">
+      <div class="mx-10 my-auto mt-12 w-72">
+        <h1 class="text-5xl font-extrabold leading-tight text-dark-green w-38">Hello!</h1>
+        <h2 class="pr-5 text-5xl font-extrabold leading-tight text-dark-green">My name is Terrell.</h2>
+        <h3 class="mt-5 ml-0.5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, cum ea! Sint eveniet
+          aliquid in at ipsum ullam voluptatibus ipsum ea similique quis exercitationem! </h3>
+        <button class="px-4 py-2 mt-5 font-black border-solid rounded-3xl bg-light-green">Contact
+          Me</button>
       </div>
-      <img class="absolute bottom-0" src="./imgs/3dlandlit.png" alt="">
+      <img class="absolute scale-150 -bottom-20" src="./imgs/3dlandlit.png" alt="">
     </section>
   </header>
-  <main class="grid w-full h-full grid-cols-1 m-auto">
-    <section id="projects" class="grid h-screen grid-cols-1 bg-dark-green">
-      <div class="w-5/6 m-auto h-4/6 bg-light-green"></div>
+  <main class="grid w-full h-full m-auto">
+    <section id="projects" class="grid h-screen grid-cols-1 grid-rows-1fr-auto">
+      <div class="">
+        <h4 class="bottom-0 py-12 -ml-4 text-6xl font-black text-center whitespace-nowrap drop-shadow-title-effect">
+          PROJECTS PROJECTS PROJECTS
+        </h4>
+      </div>
+      <div class="w-5/6 h-full mx-auto mt-auto bg-light-green"></div>
     </section>
-    <section id="skills-tech" class="grid h-screen grid-cols-1 bg-light-green">
-      <figure class="w-11/12 m-auto bg-dim-green h-4/6"></figure>
+    <span
+      class="py-20 -ml-5 overflow-hidden font-black leading-3 text-8xl whitespace-nowrap drop-shadow-title-effect">///////////////////////////////</span>
+    <section id="skills-tech" class="grid h-screen grid-cols-1 grid-rows-auto-1fr">
+      <div class="w-5/6 h-full mx-auto bg-light-green"></div>
+      <div class="">
+        <h4 class="bottom-0 py-8 -ml-4 text-6xl font-black text-center whitespace-nowrap drop-shadow-title-effect">
+          SKILLS+TECH+SKILLS+TECH+SKILLS
+        </h4>
+      </div>
     </section>
     <section id="contact" class="grid h-screen grid-cols-1">
       <h4 class="h-10">Want to get in touch?</h4>
