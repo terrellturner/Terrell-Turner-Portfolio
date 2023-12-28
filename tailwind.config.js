@@ -14,6 +14,7 @@ export default {
       "auto-1fr": "1fr auto",
     },
     extend: {
+      fontFamily: { roboto: ['"Roboto"'] },
       dropShadow: {
         "title-effect": "0 -20px 0px rgba(22,242,117,1.00)",
       },
