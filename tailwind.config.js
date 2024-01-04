@@ -18,6 +18,12 @@ export default {
       dropShadow: {
         "title-effect": "0 -20px 0px rgba(22,242,117,1.00)",
       },
+      margin: {
+        128: "32rem",
+      },
+      maxWidth: {
+        "screen-3xl": "1920px",
+      },
     },
   },
 };

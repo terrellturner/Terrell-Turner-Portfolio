@@ -23,19 +23,26 @@
       </div>
       <div id="mobile-nav" class="hidden"></div>
     </nav>
-    <section id="hero" class="relative h-full overflow-hidden bg-off-white">
-      <div class="mx-10 my-auto mt-12 w-72">
-        <h1 class="text-5xl font-extrabold leading-tight text-dark-green w-38">Hello!</h1>
-        <h2 class="pr-5 text-5xl font-extrabold leading-tight text-dark-green">My name is Terrell.</h2>
+    <section id="hero"
+      class="gap-11 relative grid w-full h-full grid-cols-1 mx-auto overflow-hidden md:grid-cols-[auto,700px] bg-off-white max-w-screen-3xl place-content-stretch">
+      <div
+        class="relative z-50 grid content-center mx-10 my-auto md:p-24 grid-col-1 w-72 md:w-full md:h-full md:shadow-md md:mt-auto md:order-2 backdrop-blur-md md:self-center rounded-3xl">
+        <h1 class="text-5xl font-extrabold leading-tight md:text-8xl text-dark-green w-38">Hello!</h1>
+        <h2 class="pr-5 text-3xl font-extrabold leading-tight text-dark-green">My name is Terrell.</h2>
         <h3 class="mt-5 ml-0.5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, cum ea! Sint eveniet
           aliquid in at ipsum ullam voluptatibus ipsum ea similique quis exercitationem! </h3>
-        <button class="px-4 py-2 mt-5 font-black border-solid rounded-3xl bg-light-green">Contact
+        <button class="px-4 py-2 mt-5 font-black border-solid rounded-3xl bg-light-green md:w-36 md:h-14">Contact
           Me</button>
       </div>
-      <img class="absolute scale-150 -bottom-20" src="./imgs/3dlandlit.png" alt="">
+      <!-- <img
+        class="absolute overflow-visible scale-150 md:mr-auto -bottom-20 md:h-full md:object-none md:scale-100 md:-left-1/3 md:place-self-end md:w-full"
+        src="./imgs/3dlandlit.png" alt=""> -->
+      <img
+        class="object-cover h-full overflow-visible scale-150 mt md:order-1 md:mt-36 md:-ml-20 md:scale-100 md:w-full"
+        src="./imgs/3dlandlit.png" alt="">
     </section>
   </header>
-  <main class="grid w-full h-full m-auto overflow-hidden">
+  <main class="grid w-full h-full m-auto overflow-hidden max-w-screen-3xl">
     <span
       class="z-10 pb-10 mt-5 -ml-5 overflow-hidden font-black md:hidden font-roboto text-8xl whitespace-nowrap drop-shadow-title-effect">///////////////////////////////</span>
     <section id="projects-skills"
@@ -128,21 +135,22 @@
     </section>
     <span
       class="pt-10 -ml-5 overflow-hidden font-black md:hidden font-roboto text-8xl whitespace-nowrap drop-shadow-title-effect">///////////////////////////////</span>
-    <section id="contact" class="grid content-center h-screen grid-cols-1 px-5 pt-4">
-      <h4 class="h-full py-10 m-auto text-3xl font-black text-center text-dark-grey">Want to get in touch?</h4>
-      <form id="contact" class="grid grid-cols-1 gap-6 p-10 bg-dark-grey rounded-3xl">
-        <span class="grid content-center h-full">
+    <section id="contact" class="grid h-screen grid-cols-1 px-5 pt-4 mx-auto place-content-stretch md:w-1/3">
+      <h4 class="py-10 m-auto text-3xl font-black text-center text-dark-grey">Want to get in touch?</h4>
+      <form id="contact"
+        class="grid w-full grid-cols-1 gap-6 p-10 place-content-between md:gap-0 bg-dark-grey rounded-3xldiv">
+        <div class="grid grid-cols-1">
           <label for="name-field" class="text-2xl font-black text-light-green font-roboto">Name</label>
           <input id="name-field" class="w-full h-10 p-2 bg-off-white rounded-xl">
-        </span>
-        <span class="grid content-center h-full">
+        </div>
+        <div class="grid grid-cols-1">
           <label for="name-field" class="text-2xl font-black text-light-green font-roboto">Email</label>
           <input id="name-field" class="w-full h-10 p-2 bg-off-white rounded-xl">
-        </span>
-        <span class="grid content-center h-full">
+        </div>
+        <div class="grid content-center h-full">
           <label for=" name-field" class="text-2xl font-black text-light-green font-roboto">Message</label>
           <textarea id="name-field" class="w-full p-2 h-36 bg-off-white rounded-xl text-start mult"></textarea>
-        </span>
+        </div>
       </form>
       <button
         class="p-4 mx-auto my-5 text-3xl font-black leading-none bg-light-green rounded-3xl text-dark-grey font-roboto">SEND!</button>
