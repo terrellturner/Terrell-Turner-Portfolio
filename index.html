@@ -11,34 +11,47 @@
 
 <body class="grid min-h-screen grid-rows-1fr-auto bg-off-white">
   <header class="grid w-full h-screen grid-rows-1fr-auto">
-    <nav class="grid grid-cols-2 h-22 bg-dim-green">
+    <nav class="relative grid h-full grid-cols-2 bg-dim-green">
       <span class="grid w-24 h-24 grid-cols-1 my-auto">
         <img src="./imgs/TT5.svg" alt="" class="p-5">
       </span>
-      <ul class="hidden"></ul>
-      <div id="hamburger" class="my-auto justify-self-end">
+      <ul
+        class="text-off-white gap-5 content-between hidden grid-cols-[auto,auto,auto] my-auto mr-9 text-3xl font-bold place-self-end justify-items-center h-7 md:grid">
+        <li><button class="uppercase">home</button></li>
+        <li><button class="uppercase">resume</button></li>
+        <li><button class="uppercase">contact</button></li>
+      </ul>
+      <div id="hamburger" class="my-auto justify-self-end md:hidden">
         <span class="block w-12 h-1 m-3 bg-off-white"></span>
         <span class="block w-12 h-1 m-3 bg-off-white"></span>
         <span class="block w-12 h-1 m-3 bg-off-white"></span>
       </div>
-      <div id="mobile-nav" class="hidden"></div>
+      <div id="mobile-nav" class="fixed top-0 bottom-0 right-0 z-10 w-full h-screen touch-none bg-dark-green">
+      </div>
     </nav>
     <section id="hero"
-      class="gap-11 relative grid w-full h-full grid-cols-1 mx-auto overflow-hidden md:grid-cols-[auto,700px] bg-off-white max-w-screen-3xl place-content-stretch">
+      class="content-between grid w-full h-full grid-cols-1 mx-auto overflow-hidden md:grid-cols-[auto,700px] bg-off-white md:max-w-screen-3xl md:place-content-stretch">
       <div
-        class="relative z-50 grid content-center mx-10 my-auto md:p-24 grid-col-1 w-72 md:w-full md:h-full md:shadow-md md:mt-auto md:order-2 backdrop-blur-md md:self-center rounded-3xl">
-        <h1 class="text-5xl font-extrabold leading-tight md:text-8xl text-dark-green w-38">Hello!</h1>
-        <h2 class="pr-5 text-3xl font-extrabold leading-tight text-dark-green">My name is Terrell.</h2>
-        <h3 class="mt-5 ml-0.5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, cum ea! Sint eveniet
+        class="relative grid content-center mx-10 mt-10 md:z-50 md:p-24 grid-col-1 w-72 md:w-full md:h-full md:shadow-md md:mt-auto md:order-2 md:backdrop-blur-md md:self-center rounded-3xl">
+        <h1 class="text-5xl font-extrabold leading-tight md:text-8xl w-38">Hello!</h1>
+        <h2 class="pr-5 text-3xl font-extrabold leading-tight ">My name is Terrell.</h2>
+        <h3 class="my-6 ml-0.5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, cum ea! Sint
+          eveniet
           aliquid in at ipsum ullam voluptatibus ipsum ea similique quis exercitationem! </h3>
-        <button class="px-4 py-2 mt-5 font-black border-solid rounded-3xl bg-light-green md:w-36 md:h-14">Contact
-          Me</button>
+        <button class="px-4 py-2 font-black border-solid rounded-full bg-light-green md:h-20 md:w-20 md:hidden">Contact
+          Me!</button>
+        <span class="content-center hidden w-2/3 grid-cols-4 -ml-1 md:grid justify-items-center">
+          <button class="px-4 py-2 font-black border-solid rounded-full bg-light-green md:h-20 md:w-20">@</button>
+          <button class="px-4 py-2 font-black border-solid rounded-full bg-light-green md:h-20 md:w-20">@</button>
+          <button class="px-4 py-2 font-black border-solid rounded-full bg-light-green md:h-20 md:w-20">@</button>
+          <button class="px-4 py-2 font-black border-solid rounded-full bg-light-green md:h-20 md:w-20">@</button>
+        </span>
       </div>
       <!-- <img
         class="absolute overflow-visible scale-150 md:mr-auto -bottom-20 md:h-full md:object-none md:scale-100 md:-left-1/3 md:place-self-end md:w-full"
         src="./imgs/3dlandlit.png" alt=""> -->
       <img
-        class="object-cover h-full overflow-visible scale-150 mt md:order-1 md:mt-36 md:-ml-20 md:scale-100 md:w-full"
+        class="object-cover h-full overflow-visible scale-150 mt-11 md:order-1 md:mt-36 md:-ml-20 md:scale-100 md:w-full"
         src="./imgs/3dlandlit.png" alt="">
     </section>
   </header>
@@ -47,10 +60,11 @@
       class="z-10 pb-10 mt-5 -ml-5 overflow-hidden font-black md:hidden font-roboto text-8xl whitespace-nowrap drop-shadow-title-effect">///////////////////////////////</span>
     <section id="projects-skills"
       class="min-h-screen grid grid-cols-1 overflow-hidden md:grid-cols-[60px,1fr,100px,1fr,60px]">
-      <h4
-        class="py-8 m-auto text-6xl font-black text-center md:-mt-36 md:py-0 whitespace-nowrap drop-shadow-title-effect md:rotate-90 md:origin-left md:pb-11">
-        PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS
-      </h4>
+      <div
+        class="py-8 m-auto text-6xl font-black md:mr-4 md:-mt-24 md:py-0 md:m-0 md:self-start whitespace-nowrap drop-shadow-title-effect md:rotate-90">
+        <span> PROJECTS </span><span> PROJECTS </span><span> PROJECTS </span><span> PROJECTS </span><span> PROJECTS
+        </span><span> PROJECTS </span><span> PROJECTS </span><span> PROJECTS </span>
+      </div>
       <div class="grid grid-cols-1 gap-16 py-10 md:content-center">
         <figure class="w-5/6 h-32 m-auto md:h-56">
           <div class="grid w-full h-full grid-cols-2 p-3 mx-auto leading-4 border-2 rounded-3xl border-light-green">
@@ -128,32 +142,34 @@
       </div>
 
       </div>
-      <h4
-        class="py-8 m-auto text-6xl font-black text-center md:-mb-40 md:-rotate-90 whitespace-nowrap drop-shadow-title-effect md:origin-left md:py-0 md:ml-10 md:m-auto">
-        SKILLS+TECH+SKILLS+TECH+SKILLS+TECH+SKILLS+TECH+SKILLS+TECH+SKILLS+
-      </h4>
+      <div
+        class="py-8 m-auto text-6xl font-black leading-snug md:-mb-32 md:ml-4 md:py-0 md:m-0 md:self-end whitespace-nowrap drop-shadow-title-effect md:-rotate-90">
+        <span>SKILLS</span><span> + </span><span>TECH</span><span> + </span><span>SKILLS</span><span> +
+        </span><span>TECH</span><span> + </span><span>SKILLS</span><span> + </span><span>TECH</span><span> +
+        </span><span>SKILLS</span><span> + </span><span>TECH</span><span> + </span>
+      </div>
     </section>
     <span
       class="pt-10 -ml-5 overflow-hidden font-black md:hidden font-roboto text-8xl whitespace-nowrap drop-shadow-title-effect">///////////////////////////////</span>
-    <section id="contact" class="grid h-screen grid-cols-1 px-5 pt-4 mx-auto place-content-stretch md:w-1/3">
+    <section id="contact" class="grid w-full h-screen grid-cols-1 px-5 pt-4 mx-auto place-content-center md:w-2/3">
       <h4 class="py-10 m-auto text-3xl font-black text-center text-dark-grey">Want to get in touch?</h4>
-      <form id="contact"
-        class="grid w-full grid-cols-1 gap-6 p-10 place-content-between md:gap-0 bg-dark-grey rounded-3xldiv">
-        <div class="grid grid-cols-1">
+      <form id="contact-form"
+        class="grid w-full h-full max-w-2xl grid-cols-1 p-10 mx-auto md:gap-0 bg-dark-grey rounded-3xl">
+        <div class="grid grid-cols-1 py-1">
           <label for="name-field" class="text-2xl font-black text-light-green font-roboto">Name</label>
           <input id="name-field" class="w-full h-10 p-2 bg-off-white rounded-xl">
         </div>
-        <div class="grid grid-cols-1">
+        <div class="grid grid-cols-1 py-1">
           <label for="name-field" class="text-2xl font-black text-light-green font-roboto">Email</label>
           <input id="name-field" class="w-full h-10 p-2 bg-off-white rounded-xl">
         </div>
-        <div class="grid content-center h-full">
+        <div class="grid content-center w-full h-full pt-12">
           <label for=" name-field" class="text-2xl font-black text-light-green font-roboto">Message</label>
-          <textarea id="name-field" class="w-full p-2 h-36 bg-off-white rounded-xl text-start mult"></textarea>
+          <textarea id="name-field" class="w-full p-2 h-52 bg-off-white rounded-xl text-start mult"></textarea>
         </div>
       </form>
       <button
-        class="p-4 mx-auto my-5 text-3xl font-black leading-none bg-light-green rounded-3xl text-dark-grey font-roboto">SEND!</button>
+        class="p-4 mx-auto my-5 text-3xl font-black leading-none md:h-20 md:w-44 bg-light-green rounded-3xl text-dark-grey font-roboto">SEND!</button>
     </section>
   </main>
   <footer class="w-full mt-5 h-96 bg-dark-grey"></footer>
