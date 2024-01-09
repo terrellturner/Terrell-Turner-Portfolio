@@ -13,3 +13,38 @@ const techNames = [
   "InDesign",
   "",
 ];
+
+const siteBody = document.getElementsByTagName("body")[0];
+
+//Open mobile nav
+
+const mobileNav = document.getElementById("mobile-nav");
+
+const mobileNavHamburger = document
+  .getElementById("hamburger")
+  .addEventListener("click", mobileNavTap);
+
+function mobileNavTap() {
+  //Check <body> for fixed
+  if (!siteBody.classList.contains("fixed")) {
+    mobileNav.classList.remove("animate-slideOut");
+    openMobileNav();
+  } else {
+    mobileNav.classList.remove("animate-slideIn");
+    closeMobileNav();
+  }
+}
+
+function openMobileNav() {
+  mobileNav.classList.add("animate-slideIn");
+
+  siteBody.classList.remove("relative");
+  siteBody.classList.add("fixed");
+}
+
+function closeMobileNav() {
+  mobileNav.classList.add("animate-slideOut");
+
+  siteBody.classList.remove("fixed");
+  siteBody.classList.add("relative");
+}
