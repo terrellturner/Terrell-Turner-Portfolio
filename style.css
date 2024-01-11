@@ -9,3 +9,12 @@
         font-family: "Poppins", system-ui, sans-serif;
     }
 }
+
+#projects-banner {
+    animation-timeline: scroll(root);
+}
+
+#skills-banner {
+    animation-timeline: scroll(root);
+    animation-direction: reverse;
+}

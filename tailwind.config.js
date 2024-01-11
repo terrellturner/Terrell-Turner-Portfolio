@@ -17,6 +17,10 @@ export default {
       animation: {
         slideIn: "slideIn .5s ease 0s 1 normal forwards",
         slideOut: "slideOut .5s ease 0s 1 normal forwards",
+        techScrollMobile: "techScrollMobile linear",
+        techScrollDesktop: "techScrollDesktop linear",
+        skillScrollMobile: "skillScrollMobile linear",
+        skillScrollDesktop: "skillScrollDesktop linear",
       },
       dropShadow: {
         "title-effect": "0 -20px 0px rgba(22,242,117,1.00)",
@@ -30,6 +34,22 @@ export default {
         slideOut: {
           "0%": { opacity: "1", transform: "translateX(0)" },
           "100%": { opacity: "0", transform: "translateX(500px)" },
+        },
+        techScrollMobile: {
+          from: { transform: "translateX(-20rem)" },
+          to: { transform: "translateX(10rem)" },
+        },
+        techScrollDesktop: {
+          from: { transform: "translateY(-20rem) rotate(90deg)" },
+          to: { transform: "translateY(10rem) rotate(90deg)" },
+        },
+        skillScrollMobile: {
+          from: { transform: "translateX(-20rem)" },
+          to: { transform: "translateX(10rem)" },
+        },
+        skillScrollDesktop: {
+          from: { transform: "translateY(-10rem) rotate(-90deg)" },
+          to: { transform: "translateY(10rem) rotate(-90deg)" },
         },
       },
       margin: {

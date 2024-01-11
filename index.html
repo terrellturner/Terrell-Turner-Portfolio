@@ -16,7 +16,7 @@
   <header class="relative grid w-full h-screen grid-rows-1fr-auto">
     <nav class="grid h-full grid-cols-2 bg-dim-green">
       <span class="z-40 grid w-24 h-24 grid-cols-1 my-auto">
-        <img src="./imgs/TT5.svg" alt="" class="p-5">
+        <img src="./imgs/TT5.svg" alt="" class="p-5 ">
       </span>
       <ul
         class="text-off-white gap-5 content-between hidden grid-cols-[auto,auto,auto] my-auto mr-9 text-3xl font-bold place-self-end justify-items-center h-7 md:grid">
@@ -38,10 +38,14 @@
         </ul>
         <div class="w-48 h-full ">
           <span class="grid content-center justify-center h-48 grid-cols-2 gap-4 -ml-1 justify-items-center">
-            <button class="w-24 h-24 p-8 px-4 font-black border-solid rounded-full bg-light-green">@</button>
-            <button class="w-24 h-24 p-8 px-4 font-black border-solid rounded-full bg-light-green">@</button>
-            <button class="w-24 h-24 p-8 px-4 font-black border-solid rounded-full bg-light-green">@</button>
-            <button class="w-24 h-24 p-8 px-4 font-black border-solid rounded-full bg-light-green">@</button>
+            <button class="w-24 h-24 p-8 px-4 text-4xl font-black border-solid rounded-full bg-light-green">
+              <i class="fa-solid fa-envelope"></i></button>
+            <button class="w-24 h-24 p-8 px-4 text-4xl font-black border-solid rounded-full bg-light-green">
+              <i class="fa-brands fa-linkedin"></i></button>
+            <button class="w-24 h-24 p-8 px-4 text-4xl font-black border-solid rounded-full bg-light-green">
+              <i class="fa-brands fa-github"></i></button>
+            <button class="w-24 h-24 p-8 px-4 text-4xl font-black border-solid rounded-full bg-light-green">
+              <i class="fa-brands fa-x-twitter"></i></button>
           </span>
         </div>
       </div>
@@ -81,8 +85,8 @@
       class="z-10 pb-10 mt-5 -ml-5 overflow-hidden font-black md:hidden font-roboto text-8xl whitespace-nowrap drop-shadow-title-effect">///////////////////////////////</span>
     <section id="projects-skills"
       class="min-h-screen grid grid-cols-1 overflow-hidden md:grid-cols-[60px,1fr,100px,1fr,60px]">
-      <div
-        class="py-8 m-auto text-6xl font-black md:mr-4 md:-mt-24 md:py-0 md:m-0 md:self-start whitespace-nowrap drop-shadow-title-effect md:rotate-90">
+      <div id="projects-banner"
+        class="py-8 m-auto text-6xl font-black animate-techScrollMobile md:animate-techScrollDesktop md:mr-4 md:-mt-24 md:py-0 md:m-0 md:self-start whitespace-nowrap drop-shadow-title-effect md:rotate-90">
         <span> PROJECTS </span><span> PROJECTS </span><span> PROJECTS </span><span> PROJECTS </span><span> PROJECTS
         </span><span> PROJECTS </span><span> PROJECTS </span><span> PROJECTS </span>
       </div>
@@ -115,7 +119,7 @@
           </div>
         </figure>
       </div>
-      <span
+      <span id="main-divider"
         class="py-10 m-auto -ml-5 overflow-hidden font-black md:py-0 md:rotate-90 font-roboto text-8xl whitespace-nowrap drop-shadow-title-effect md:origin-left md:ml-12 md:-mt-14">/////////////////////////////////////////////////////////////////////////////////////////////</span>
       <div id="skills" class="grid grid-cols-1 gap-20 py-10 md:gap-2">
         <figure id="skills-grid"
@@ -123,48 +127,56 @@
           <div
             class="grid items-center grid-cols-1 gap-4 my-auto md:px-5 md:w-full md:h-full md:col-span-2 lg:col-span-1 md:justify-items-center">
             <span
-              class="grid w-24 h-24 max-w-[10rem] grid-cols-1 border-2 rounded-tl-3xl rounded-br-3xl border-light-green md:h-28 md:w-5/6 xl:h-36"><a
-                class="m-auto" href="">HTML+CSS</a></span>
+              class=" place-content-center justify-items-center md:text-3xl font-black text-4xl grid w-24 h-24 max-w-[10rem] grid-cols-3 p-2 md:grid-cols-1 border-2 rounded-tl-3xl rounded-br-3xl border-light-green md:h-28 md:w-5/6 xl:h-36">
+              <i class="mt-2 fa-brands fa-html5"></i>
+              <span class="mt-2">+</span>
+              <i class="mt-2 fa-brands fa-css3-alt"></i>
+            </span>
             <span
-              class="grid w-24 h-24 max-w-[10rem] grid-cols-1 border-2 rounded-tl-3xl rounded-br-3xl border-light-green md:h-28 md:w-5/6 xl:h-36"><a
-                class="m-auto" href="">JavaScript</a></span>
+              class="text-5xl grid w-24 h-24 max-w-[10rem] grid-cols-1 border-2 rounded-tl-3xl rounded-br-3xl border-light-green md:h-28 md:w-5/6 xl:h-36"><a
+                class="m-auto" href=""><i class="fa-brands fa-js"></i></a></span>
             <span
-              class="grid w-24 h-24 max-w-[10rem] grid-cols-1 border-2 rounded-tl-3xl rounded-br-3xl border-light-green md:h-28 md:w-5/6 xl:h-36"><a
+              class="font-black text-3xl grid w-24 h-24 max-w-[10rem] grid-cols-1 border-2 rounded-tl-3xl rounded-br-3xl border-light-green md:h-28 md:w-5/6 xl:h-36"><a
                 class="m-auto" href="">C#</a></span>
           </div>
           <div
             class="grid items-center grid-cols-1 gap-4 my-auto lg:gap-14 md:px-5 md:w-full md:h-full md:col-span-2 lg:col-span-1 md:justify-items-center md:py-3 lg:py-0">
             <span
-              class="grid w-24 h-24 max-w-[10rem] grid-cols-1 border-2 rounded-tl-3xl rounded-br-3xl border-light-green md:h-28 md:w-5/6 xl:h-36"><a
-                class="m-auto" href="">React</a></span>
+              class="text-5xl font-black grid w-24 h-24 max-w-[10rem] grid-cols-1 border-2 rounded-tl-3xl rounded-br-3xl border-light-green md:h-28 md:w-5/6 xl:h-36"><a
+                class="m-auto" href=""><i class="fa-brands fa-react"></i></a></span>
             <span
-              class="grid w-24 h-24 max-w-[10rem] grid-cols-1 border-2 rounded-tl-3xl rounded-br-3xl border-light-green md:h-28 md:w-5/6 xl:h-36"><a
-                class="m-auto" href="">Vue.js</a></span>
+              class="text-5xl font-black grid w-24 h-24 max-w-[10rem] grid-cols-1 border-2 rounded-tl-3xl rounded-br-3xl border-light-green md:h-28 md:w-5/6 xl:h-36"><a
+                class="m-auto" href=""><i class="fa-brands fa-vuejs"></i></a></span>
             <span
-              class="grid w-24 h-24 max-w-[10rem] grid-cols-1 border-2 rounded-tl-3xl rounded-br-3xl border-light-green md:h-28 md:w-5/6 xl:h-36"><a
-                class="m-auto" href="">Vite+Vitest</a></span>
+              class="justify-items-center items-center text-5xl font-black grid w-24 h-24 max-w-[10rem] grid-cols-1 border-2 rounded-tl-3xl rounded-br-3xl border-light-green md:h-28 md:w-5/6 xl:h-36">
+              <img src="./imgs/vite.svg" alt="" srcset="" class="w-1/2 h-1/2">
+            </span>
             <span
-              class="grid w-24 h-24 max-w-[10rem] grid-cols-1 border-2 rounded-tl-3xl rounded-br-3xl border-light-green md:h-28 md:w-5/6 xl:h-36"><a
-                class="m-auto" href="">PostgreSQL</a></span>
+              class="justify-items-center items-center text-5xl font-black grid w-24 h-24 max-w-[10rem] grid-cols-1 border-2 rounded-tl-3xl rounded-br-3xl border-light-green md:h-28 md:w-5/6 xl:h-36">
+              <img src="./imgs/mongodb.svg" alt="" srcset="" class="w-1/2 h-1/2">
+            </span>
           </div>
           <div
             class="grid items-center grid-cols-1 gap-4 my-auto md:px-5 md:w-full md:h-full md:col-span-2 lg:col-span-1 md:justify-items-center">
             <span
-              class="grid w-24 h-24 max-w-[10rem] grid-cols-1 border-2 rounded-tl-3xl rounded-br-3xl border-light-green md:h-28 md:w-5/6 xl:h-36"><a
-                class="m-auto" href="">Blender</a></span>
+              class="justify-items-center items-center text-5xl font-black grid w-24 h-24 max-w-[10rem] grid-cols-1 border-2 rounded-tl-3xl rounded-br-3xl border-light-green md:h-28 md:w-5/6 xl:h-36">
+              <img src="./imgs/blender.svg" alt="" srcset="" class="w-1/2 h-1/2">
+            </span>
             <span
-              class="grid w-24 h-24 max-w-[10rem] grid-cols-1 border-2 rounded-tl-3xl rounded-br-3xl border-light-green md:h-28 md:w-5/6 xl:h-36"><a
-                class="m-auto" href="">InDesign</a></span>
+              class="justify-items-center items-center text-5xl font-black grid w-24 h-24 max-w-[10rem] grid-cols-1 border-2 rounded-tl-3xl rounded-br-3xl border-light-green md:h-28 md:w-5/6 xl:h-36">
+              <img src="./imgs/indesign.svg" alt="" srcset="" class="w-1/2 h-1/2">
+            </span>
             <span
-              class="grid w-24 h-24 max-w-[10rem] grid-cols-1 border-2 rounded-tl-3xl rounded-br-3xl border-light-green md:h-28 md:w-5/6 xl:h-36"><a
-                class="m-auto" href="">Figma</a></span>
+              class="justify-items-center items-center text-5xl font-black grid w-24 h-24 max-w-[10rem] grid-cols-1 border-2 rounded-tl-3xl rounded-br-3xl border-light-green md:h-28 md:w-5/6 xl:h-36">
+              <img src="./imgs/figma.svg" alt="" srcset="" class="w-1/2 h-1/2">
+            </span>
           </div>
         </figure>
       </div>
 
       </div>
-      <div
-        class="py-8 m-auto text-6xl font-black leading-snug md:-mb-32 md:ml-4 md:py-0 md:m-0 md:self-end whitespace-nowrap drop-shadow-title-effect md:-rotate-90">
+      <div id="skills-banner"
+        class="py-8 m-auto text-6xl font-black leading-snug animate-skillScrollMobile md:animate-skillScrollDesktop md:-mb-32 md:ml-4 md:py-0 md:m-0 md:self-end whitespace-nowrap drop-shadow-title-effect md:-rotate-90">
         <span>SKILLS</span><span> + </span><span>TECH</span><span> + </span><span>SKILLS</span><span> +
         </span><span>TECH</span><span> + </span><span>SKILLS</span><span> + </span><span>TECH</span><span> +
         </span><span>SKILLS</span><span> + </span><span>TECH</span><span> + </span>
@@ -183,10 +195,14 @@
       </div>
       <span
         class="grid content-center w-2/3 h-full grid-cols-2 gap-4 m-auto my-4 md:my-10 md:w-56 place-content-center justify-items-center">
-        <button class="w-24 h-24 p-8 px-4 font-black border-solid rounded-full bg-light-green">@</button>
-        <button class="w-24 h-24 p-8 px-4 font-black border-solid rounded-full bg-light-green">@</button>
-        <button class="w-24 h-24 p-8 px-4 font-black border-solid rounded-full bg-light-green">@</button>
-        <button class="w-24 h-24 p-8 px-4 font-black border-solid rounded-full bg-light-green">@</button>
+        <button class="w-24 h-24 p-8 px-4 text-4xl font-black border-solid rounded-full bg-light-green">
+          <i class="fa-solid fa-envelope"></i></button>
+        <button class="w-24 h-24 p-8 px-4 text-4xl font-black border-solid rounded-full bg-light-green">
+          <i class="fa-brands fa-linkedin"></i></button>
+        <button class="w-24 h-24 p-8 px-4 text-4xl font-black border-solid rounded-full bg-light-green">
+          <i class="fa-brands fa-github"></i></button>
+        <button class="w-24 h-24 p-8 px-4 text-4xl font-black border-solid rounded-full bg-light-green">
+          <i class="fa-brands fa-x-twitter"></i></button>
       </span>
       </form>
     </section>
