@@ -22,6 +22,9 @@ export default {
         skillScrollMobile: "skillScrollMobile linear",
         skillScrollDesktop: "skillScrollDesktop linear",
       },
+      backgroundImage: {
+        "contact-bg": "url('./imgs/contact-bg.png')",
+      },
       dropShadow: {
         "title-effect": "0 -20px 0px rgba(22,242,117,1.00)",
       },
