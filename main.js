@@ -38,6 +38,8 @@ function mobileNavTap() {
 function openMobileNav() {
   mobileNav.classList.add("animate-slideIn");
 
+  toggleMobileNavContactBtns();
+
   siteBody.classList.remove("relative");
   siteBody.classList.add("fixed");
 }
@@ -47,4 +49,9 @@ function closeMobileNav() {
 
   siteBody.classList.remove("fixed");
   siteBody.classList.add("relative");
+}
+
+function toggleMobileNavContactBtns() {
+  mobileNav.querySelector("#mobileContactBtns").classList.add("grid");
+  mobileNav.querySelector("#mobileContactBtns").classList.remove("hidden");
 }
