@@ -90,17 +90,17 @@
         src="./imgs/3dlandlit.png" alt="">
     </section>
   </header>
-  <main class="grid w-full h-full m-auto overflow-hidden max-w-screen-3xl">
+  <main class="relative grid w-full h-full m-auto overflow-hidden max-w-screen-3xl">
     <span
-      class="z-10 pb-10 mt-5 -ml-5 overflow-hidden font-black md:hidden font-roboto text-8xl whitespace-nowrap drop-shadow-title-effect">///////////////////////////////</span>
+      class="pb-10 mt-5 -ml-5 overflow-hidden font-black md:hidden font-roboto text-8xl whitespace-nowrap drop-shadow-title-effect">///////////////////////////////</span>
     <section id="projects-skills"
-      class="bg-gradient-to-tr from-[#eeeeee] to-off-white min-h-screen grid grid-cols-1 overflow-hidden md:grid-cols-[60px,1.8fr,0.2fr,60px]">
+      class=" bg-gradient-to-tr from-[#eeeeee] to-off-white md:h-screen grid grid-cols-1 overflow-hidden md:grid-cols-[60px,1.8fr,0.1fr,60px]">
       <div id="projects-banner"
-        class="py-8 m-auto text-6xl font-black animate-techScrollMobile md:animate-techScrollDesktop md:mr-4 md:-mt-24 md:py-0 md:m-0 md:self-start whitespace-nowrap drop-shadow-title-effect md:rotate-90">
+        class="z-10 py-8 m-auto text-6xl font-black animate-techScrollMobile md:animate-techScrollDesktop md:mr-4 md:-mt-24 md:py-0 md:m-0 md:self-start whitespace-nowrap drop-shadow-title-effect md:rotate-90 ">
         <span> PROJECTS </span><span> PROJECTS </span><span> PROJECTS </span><span> PROJECTS </span><span> PROJECTS
         </span><span> PROJECTS </span><span> PROJECTS </span><span> PROJECTS </span>
       </div>
-      <div class="grid h-full grid-cols-1 gap-16 py-10 md:content-center">
+      <div id="projects" class="grid h-full grid-cols-1 gap-12 xl:py-10 xl:grid-cols-2 md:place-content-center">
         <figure class="w-5/6 h-48 m-auto md:h-full">
           <div
             class="grid w-full h-full grid-cols-2 p-5 mx-auto leading-4 border-2 md:gap-5 items-c justify-items-centerenter md:grid-cols-1 rounded-3xl border-light-green">
@@ -131,19 +131,24 @@
             </article>
           </div>
         </figure>
-
+        <button
+          class="grid  min-w-[20rem] w-1/2 xl:w-5/6 h-full m-auto leading-4 border-2 xl:p-5 md:gap-5 items-c justify-items-centerenter md:grid-cols-1 rounded-3xl border-light-green md:h-full font-bold md:text-2xl">
+          <span class="hidden h-full rounded-lg xl:block md:h-52 md:w-full bg-dark-grey"></span>
+          <article class="grid grid-cols-1 gap-5 p-5 m-auto">
+            <h5>See more on my blog!</h5>
+          </article>
+        </button>
       </div>
       <span id="main-divider"
         class="py-10 m-auto -ml-5 overflow-hidden font-black font-roboto text-8xl whitespace-nowrap drop-shadow-title-effect md:hidden">/////////////////////////////////////////////////////////////////////////////////////////////</span>
-      <div id="skills" class="grid grid-cols-1 gap-20 py-10 md:gap-2 md:bg-dark-green">
+      <div id="skills" class="grid grid-cols-1 gap-20 py-10 mr-1 md:gap-2 md:bg-light-green md:min-w-[5rem]">
         <figure id="skills-grid"
-          class="grid w-full grid-cols-3 gap-16 m-auto md:content-center md:grid-cols-1 justify-items-center">
+          class="grid w-full h-full grid-cols-3 m-auto md:content-center md:grid-cols-1 justify-items-center">
           <div
-            class="grid grid-cols-1 gap-4 my-auto md:gap-16 md:content-center md:px-5 md:w-full md:h-full md:justify-items-end ">
+            class="grid grid-cols-1 gap-4 my-auto md:content-center md:px-5 md:w-full md:h-full md:justify-items-center ">
             <span
-              class=" place-content-center justify-items-center md:text-3xl font-black text-4xl grid w-24 h-24 max-w-[5rem] grid-cols-3 p-2-p0 border-2 md:border-0 rounded-tl-3xl rounded-br-3xl border-light-green md:h-20 md:w-full ">
+              class="content-center place-items-center md:text-3xl font-black text-4xl grid w-24 h-24 max-w-[5rem] grid-cols-2 p-2-p0 border-2 md:border-0 rounded-tl-3xl rounded-br-3xl border-light-green md:h-20 md:w-full ">
               <i class="mt-2 fa-brands fa-html5"></i>
-              <span class="mt-2">+</span>
               <i class="mt-2 fa-brands fa-css3-alt"></i>
             </span>
             <span
@@ -154,7 +159,7 @@
                 class="m-auto" href="">C#</a></span>
           </div>
           <div
-            class="grid items-center grid-cols-1 gap-4 my-auto md:gap-16 md:px-5 md:w-full md:h-full lg:col-span-1 md:justify-items-end">
+            class="grid items-center grid-cols-1 gap-4 my-auto md:px-5 md:w-full md:h-full lg:col-span-1 md:justify-items-center">
             <span
               class="text-5xl font-black grid w-24 h-24 max-w-[5rem] grid-cols-1 border-2 md:border-0 rounded-tl-3xl rounded-br-3xl border-light-green md:h-20 md:w-full "><a
                 class="m-auto" href=""><i class="fa-brands fa-react"></i></a></span>
@@ -163,43 +168,44 @@
                 class="m-auto" href=""><i class="fa-brands fa-vuejs"></i></a></span>
             <span
               class="justify-items-center items-center text-5xl font-black grid w-24 h-24 max-w-[5rem] grid-cols-1 border-2 md:border-0 rounded-tl-3xl rounded-br-3xl border-light-green md:h-20 md:w-full ">
-              <img src="./imgs/vite.svg" alt="" srcset="" class="w-1/2 h-1/2">
+              <img src="./imgs/vite.svg" alt="" srcset="" class="">
             </span>
             <span
               class="justify-items-center items-center text-5xl font-black grid w-24 h-24 max-w-[5rem] grid-cols-1 border-2 md:border-0 rounded-tl-3xl rounded-br-3xl border-light-green md:h-20 md:w-full ">
-              <img src="./imgs/mongodb.svg" alt="" srcset="" class="w-1/2 h-1/2">
+              <img src="./imgs/mongodb.svg" alt="" srcset="" class="">
             </span>
           </div>
           <div
-            class="grid items-center grid-cols-1 gap-4 my-auto md:gap-16 md:px-5 md:w-full md:h-full lg:col-span-1 md:justify-items-end ">
+            class="grid items-center grid-cols-1 gap-4 my-auto md:px-5 md:w-full md:h-full lg:col-span-1 md:justify-items-center ">
             <span
               class="justify-items-center items-center text-5xl font-black grid w-24 h-24 max-w-[5rem] grid-cols-1 border-2 md:border-0 rounded-tl-3xl rounded-br-3xl border-light-green md:h-20 md:w-full ">
-              <img src="./imgs/blender.svg" alt="" srcset="" class="w-1/2 h-1/2">
+              <img src="./imgs/blender.svg" alt="" srcset="" class="">
             </span>
             <span
               class="justify-items-center items-center text-5xl font-black grid w-24 h-24 max-w-[5rem] grid-cols-1 border-2 md:border-0 rounded-tl-3xl rounded-br-3xl border-light-green md:h-20 md:w-full ">
-              <img src="./imgs/indesign.svg" alt="" srcset="" class="w-1/2 h-1/2">
+              <img src="./imgs/indesign.svg" alt="" srcset="" class="">
             </span>
             <span
               class="justify-items-center items-center text-5xl font-black grid w-24 h-24 max-w-[5rem] grid-cols-1 border-2 md:border-0 rounded-tl-3xl rounded-br-3xl border-light-green md:h-20 md:w-full ">
-              <img src="./imgs/figma.svg" alt="" srcset="" class="w-1/2 h-1/2">
+              <img src="./imgs/figma.svg" alt="" srcset="" class="">
             </span>
           </div>
         </figure>
       </div>
       <div id="skills-banner"
-        class="py-8 m-auto text-6xl font-black leading-snug md:bg-dark-grey animate-skillScrollMobile md:animate-skillScrollDesktop md:-mb-32 md:ml-4 md:py-0 md:m-0 md:self-end whitespace-nowrap drop-shadow-title-effect md:-rotate-90">
+        class="z-10 py-8 m-auto text-6xl font-black leading-snug animate-skillScrollMobile md:animate-skillScrollDesktop md:-mb-32 md:ml-4 md:py-0 md:m-0 md:self-end whitespace-nowrap drop-shadow-title-effect md:-rotate-90 ">
         <span>SKILLS</span><span> + </span><span>TECH</span><span> + </span><span>SKILLS</span><span> +
         </span><span>TECH</span><span> + </span><span>SKILLS</span><span> + </span><span>TECH</span><span> +
         </span><span>SKILLS</span><span> + </span><span>TECH</span><span> + </span>
       </div>
+
     </section>
     <span
       class="pt-10 -ml-5 overflow-hidden font-black md:hidden font-roboto text-8xl whitespace-nowrap drop-shadow-title-effect">///////////////////////////////</span>
     <section id="contact"
-      class="grid w-full h-screen grid-cols-1 gap-5 px-5 mx-auto bg-no-repeat bg-cover place-items-center place-content-center bg-contact-bg">
-      <div class="grid w-1/3 h-full px-10 py-20 shadow-md backdrop-blur-lg">
-        <h4 class="w-2/3 m-auto mb-5 text-4xl font-black text-center text-dark-grey">Want to get in
+      class="grid w-full h-full grid-cols-1 gap-5 px-5 py-20 mx-auto bg-no-repeat bg-cover place-items-center place-content-center bg-contact-bg">
+      <div class="grid w-full h-full shadow-md rounded-3xl p-14 md:px-10 md:py-20 md:w-2/3 xl::1/3 backdrop-blur-lg">
+        <h4 class="w-full m-auto mb-5 text-4xl font-black text-center text-dark-grey">Want to get in
           touch?</h4>
         <div class="w-full h-full p-4 mx-auto">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quas blanditiis quibusdam cum aliquid nostrum
@@ -207,14 +213,14 @@
           amet?
         </div>
         <span
-          class="grid content-center w-2/3 h-full grid-cols-2 gap-4 m-auto my-4 md:w-56 place-content-center justify-items-center">
-          <button class="w-24 h-24 p-8 px-4 text-4xl font-black border-solid rounded-full bg-light-green">
+          class="grid content-center h-full grid-cols-2 gap-6 m-auto my-4 w-46 md:w-56 place-content-center justify-items-center">
+          <button class="w-20 h-20 p-6 px-4 text-4xl font-black rounded-full bg-light-green">
             <i class="fa-solid fa-envelope"></i></button>
-          <button class="w-24 h-24 p-8 px-4 text-4xl font-black border-solid rounded-full bg-light-green">
+          <button class="w-20 h-20 p-6 px-4 text-4xl font-black rounded-full bg-light-green">
             <i class="fa-brands fa-linkedin"></i></button>
-          <button class="w-24 h-24 p-8 px-4 text-4xl font-black border-solid rounded-full bg-light-green">
+          <button class="w-20 h-20 p-6 px-4 text-4xl font-black rounded-full bg-light-green">
             <i class="fa-brands fa-github"></i></button>
-          <button class="w-24 h-24 p-8 px-4 text-4xl font-black border-solid rounded-full bg-light-green">
+          <button class="w-20 h-20 p-6 px-4 text-4xl font-black rounded-full bg-light-green">
             <i class="fa-brands fa-x-twitter"></i></button>
         </span>
       </div>

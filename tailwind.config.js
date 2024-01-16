@@ -26,7 +26,8 @@ export default {
         "contact-bg": "url('./imgs/contact-bg.png')",
       },
       dropShadow: {
-        "title-effect": "0 -20px 0px rgba(22,242,117,1.00)",
+        "title-effect-desktop": "0 -20px 0px #027333",
+        "title-effect": "0 -20px 0px #16F275",
       },
       fontFamily: { roboto: ['"Roboto"'] },
       keyframes: {
