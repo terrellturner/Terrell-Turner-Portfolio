@@ -91,10 +91,31 @@
     </section>
   </header>
   <main class="relative grid w-full h-full m-auto overflow-hidden max-w-screen-3xl">
-    <span
-      class="pb-10 mt-5 -ml-5 overflow-hidden font-black md:hidden font-roboto text-8xl whitespace-nowrap drop-shadow-title-effect">///////////////////////////////</span>
+    <section id="about" class="h-screen grid grid-cols-[.5fr,1.5fr] py-40">
+      <div id="about-me" class="bg-dim-green"></div>
+      <div id="about-me-cards" class="grid grid-cols-3 bg-dark-green">
+        <figure class="w-5/6 m-auto h-1/3 card-container">
+          <div id="hometown-card" class="relative w-full h-full p-2 rounded-3xl card-content">
+            <div
+              class="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden outline-none outline-8 outline-off-white outline-offset-0 card-front bg-dark-grey rounded-3xl">
+              <h6 class="mx-auto mt-10 text-3xl font-black text-center text-light-green">HOMETOWN</h6>
+              <span class="inline-block object-cover w-full h-64 bg-cover bg-minneapolis"></span>
+            </div>
+            <div
+              class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full h-full text-center outline-none rounded-3xl card-back bg-off-white outline-8 outline-dark-grey outline-offset-0">
+              <p>I love Minneapolis!</p>
+              <p>Don't you?</p>
+            </div>
+          </div>
+        </figure>
+
+
+      </div>
+    </section>
     <section id="projects-skills"
       class=" bg-gradient-to-tr from-[#eeeeee] to-off-white md:h-screen grid grid-cols-1 overflow-hidden md:grid-cols-[60px,1.8fr,0.1fr,60px]">
+      <span
+        class="pb-10 mt-5 -ml-5 overflow-hidden font-black md:hidden font-roboto text-8xl whitespace-nowrap drop-shadow-title-effect">///////////////////////////////</span>
       <div id="projects-banner"
         class="z-10 py-8 m-auto text-6xl font-black animate-techScrollMobile md:animate-techScrollDesktop md:mr-4 md:-mt-24 md:py-0 md:m-0 md:self-start whitespace-nowrap drop-shadow-title-effect md:rotate-90 ">
         <span> PROJECTS </span><span> PROJECTS </span><span> PROJECTS </span><span> PROJECTS </span><span> PROJECTS
@@ -200,10 +221,10 @@
       </div>
 
     </section>
-    <span
-      class="pt-10 -ml-5 overflow-hidden font-black md:hidden font-roboto text-8xl whitespace-nowrap drop-shadow-title-effect">///////////////////////////////</span>
     <section id="contact"
       class="grid w-full h-full grid-cols-1 gap-5 px-5 py-20 mx-auto bg-no-repeat bg-cover place-items-center place-content-center bg-contact-bg">
+      <span
+        class="pt-10 -ml-5 overflow-hidden font-black md:hidden font-roboto text-8xl whitespace-nowrap drop-shadow-title-effect">///////////////////////////////</span>
       <div class="grid w-full h-full shadow-md rounded-3xl p-14 md:px-10 md:py-20 md:w-1/3 xl:1/3 backdrop-blur-lg">
         <h4 class="w-full m-auto mb-5 text-4xl font-black text-center text-dark-grey">Want to get in
           touch?</h4>

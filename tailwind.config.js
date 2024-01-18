@@ -24,6 +24,7 @@ export default {
       },
       backgroundImage: {
         "contact-bg": "url('./imgs/contact-bg.png')",
+        minneapolis: "url('./imgs/minneapolis.jpg')",
       },
       dropShadow: {
         "title-effect-desktop": "0 -20px 0px #027333",
