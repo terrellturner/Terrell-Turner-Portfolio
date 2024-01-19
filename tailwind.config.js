@@ -63,6 +63,9 @@ export default {
       maxWidth: {
         "screen-3xl": "1920px",
       },
+      strokeWidth: {
+        25: "25",
+      },
     },
   },
 };
