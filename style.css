@@ -49,3 +49,39 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
+/* Animations */
+
+.about-card-animation-in {
+    animation: cardIn 100ms forwards;
+}
+
+.about-card-animation-out {
+    animation: cardOut 100ms forwards;
+}
+
+@keyframes cardIn {
+    from {
+        transform: scale(100%);
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    to {
+        transform: scale(150%);
+        margin-right: 10rem;
+    }
+}
+
+@keyframes cardOut {
+    from {
+        transform: scale(150%);
+        margin-right: 10rem;
+    }
+
+    to {
+        transform: scale(100%);
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
