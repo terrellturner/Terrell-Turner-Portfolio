@@ -12,7 +12,7 @@
   <title>Terrell Turner</title>
 </head>
 
-<body class="grid min-h-screen grid-rows-1fr-auto bg-off-white min-w-[360px]">
+<body class="grid min-h-screen grid-rows-1fr-auto bg-off-white min-w-[360px] scroll-smooth">
   <header class="relative grid w-full h-screen grid-rows-1fr-auto">
     <nav class="grid h-full grid-cols-2 bg-dim-green">
       <span class="z-40 grid w-24 h-24 grid-cols-1 my-auto">
@@ -90,10 +90,11 @@
     </section>
   </header>
   <main class="relative grid w-full h-full m-auto overflow-hidden max-w-screen-3xl">
-    <section id="about" class="h-screen grid grid-cols-[.5fr,1.5fr] py-40">
+    <section id="about" class="h-screen grid md:grid-cols-[.5fr,1.5fr] py-40 w-screen">
       <div id="about-me" class="bg-dim-green"></div>
-      <div id="about-me-cards" class="grid grid-cols-6 bg-dark-green">
-        <figure class="w-5/6 col-span-2 m-auto h-80 card-container">
+      <ul id="about-me-cards"
+        class="grid grid-flow-col-dense overflow-x-scroll px-52 md:px-0 md:grid-cols-6 md:grid-rows-2 bg-dark-green snap-x">
+        <li class="w-64 p-4 m-auto snap-center md:w-full md:col-span-2 max-w-about-card h-80 card-container">
           <div id="hometown-card" class="relative w-full h-full p-2 rounded-3xl card-content">
             <div
               class="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden outline-none outline-8 outline-off-white outline-offset-0 card-front bg-dark-grey rounded-3xl">
@@ -106,8 +107,8 @@
               <p>Don't you?</p>
             </div>
           </div>
-        </figure>
-        <figure class="w-5/6 col-span-2 m-auto h-80 card-container">
+        </li>
+        <li class="w-64 p-4 m-auto snap-center md:w-full md:col-span-2 max-w-about-card h-80 card-container">
           <div id="hometown-card" class="relative w-full h-full p-2 rounded-3xl card-content">
             <div
               class="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden outline-none outline-8 outline-off-white outline-offset-0 card-front bg-dark-grey rounded-3xl">
@@ -120,8 +121,8 @@
               <p>Don't you?</p>
             </div>
           </div>
-        </figure>
-        <figure class="w-5/6 col-span-2 m-auto h-80 card-container">
+        </li>
+        <li class="w-64 p-4 m-auto snap-center md:w-full md:col-span-2 max-w-about-card h-80 card-container">
           <div id="hometown-card" class="relative w-full h-full p-2 rounded-3xl card-content">
             <div
               class="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden outline-none outline-8 outline-off-white outline-offset-0 card-front bg-dark-grey rounded-3xl">
@@ -134,8 +135,8 @@
               <p>Don't you?</p>
             </div>
           </div>
-        </figure>
-        <figure class="w-7/12 col-span-3 m-auto h-80 card-container">
+        </li>
+        <li class="w-64 p-4 m-auto snap-center md:w-full md:col-span-2 max-w-about-card h-80 card-container">
           <div id="hometown-card" class="relative w-full h-full p-2 rounded-3xl card-content">
             <div
               class="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden outline-none outline-8 outline-off-white outline-offset-0 card-front bg-dark-grey rounded-3xl">
@@ -148,8 +149,8 @@
               <p>Don't you?</p>
             </div>
           </div>
-        </figure>
-        <figure class="w-7/12 col-span-3 m-auto h-80 card-container">
+        </li>
+        <li class="w-64 p-4 m-auto snap-center md:w-full md:col-span-2 max-w-about-card h-80 card-container">
           <div id="hometown-card" class="relative w-full h-full p-2 rounded-3xl card-content">
             <div
               class="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden outline-none outline-8 outline-off-white outline-offset-0 card-front bg-dark-grey rounded-3xl">
@@ -162,10 +163,22 @@
               <p>Don't you?</p>
             </div>
           </div>
-        </figure>
-
-
-      </div>
+        </li>
+        <li class="w-64 p-4 m-auto snap-center md:w-full md:col-span-2 max-w-about-card h-80 card-container">
+          <div id="hometown-card" class="relative w-full h-full p-2 rounded-3xl card-content">
+            <div
+              class="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden outline-none outline-8 outline-off-white outline-offset-0 card-front bg-dark-grey rounded-3xl">
+              <h6 class="mx-auto mt-10 text-3xl font-black text-center text-light-green">HOMETOWN</h6>
+              <span class="inline-block object-cover w-full h-64 bg-cover bg-minneapolis"></span>
+            </div>
+            <div
+              class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full h-full text-center outline-none rounded-3xl card-back bg-off-white outline-8 outline-dark-grey outline-offset-0">
+              <p>I love Minneapolis!</p>
+              <p>Don't you?</p>
+            </div>
+          </div>
+        </li>
+      </ul>
     </section>
     <section id="projects-skills"
       class=" bg-gradient-to-tr from-[#eeeeee] to-off-white md:h-screen grid grid-cols-1 overflow-hidden md:grid-cols-[60px,1.8fr,0.1fr,60px]">

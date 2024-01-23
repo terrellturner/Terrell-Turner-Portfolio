@@ -12,6 +12,7 @@ export default {
     gridTemplateRows: {
       "1fr-auto": "auto 1fr",
       "auto-1fr": "1fr auto",
+      2: "repeat(2, minmax(0, auto));",
     },
     extend: {
       animation: {
@@ -62,6 +63,9 @@ export default {
       },
       maxWidth: {
         "screen-3xl": "1920px",
+        "about-card": "15rem",
+
+        "about-card-sm": "12rem",
       },
       strokeWidth: {
         25: "25",
