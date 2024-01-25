@@ -37,8 +37,16 @@
     transform: rotateY(.5turn);
 }
 
-.card-container:hover .card-content {
-    transform: rotateY(.5turn) scale(120%);
+@media (min-width: 300px) {
+    .card-container:hover .card-content {
+        transform: rotateY(.5turn) scale(115%);
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-container:hover .card-content {
+        transform: rotateY(.5turn) scale(120%);
+    }
 }
 
 .scrollbar-hide::-webkit-scrollbar {
@@ -50,36 +58,11 @@
     scrollbar-width: none;
 }
 
-/* Animations */
-
-.about-card-animation-in {
-    animation: cardIn 1000ms forwards;
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
 }
 
-.about-card-animation-out {
-    animation: cardOut 1000ms forwards;
-}
-
-@keyframes cardIn {
-    from {
-        z-index: 0;
-        /* transform: scale(100%) */
-    }
-
-    to {
-        z-index: 90;
-        /* transform: scale(130%) */
-    }
-}
-
-@keyframes cardOut {
-    from {
-        z-index: 90;
-        /* transform: scale(130%) */
-    }
-
-    to {
-        z-index: 0;
-        /* transform: scale(100%) */
-    }
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
