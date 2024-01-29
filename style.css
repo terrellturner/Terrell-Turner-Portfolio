@@ -10,10 +10,6 @@
     }
 }
 
-#about-me-cards {
-    scrollbar-width: thin;
-}
-
 #projects-banner {
     animation-timeline: scroll(root);
 }
@@ -47,22 +43,4 @@
     .card-container:hover .card-content {
         transform: rotateY(.5turn) scale(120%);
     }
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-    display: none;
-}
-
-.scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.no-scrollbar::-webkit-scrollbar {
-    display: none;
-}
-
-.no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
 }

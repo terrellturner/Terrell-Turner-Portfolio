@@ -34,6 +34,7 @@ export default {
         "title-effect": "0 -20px 0px #16F275",
       },
       fontFamily: { roboto: ['"Roboto"'] },
+      height: { "screen-2xl": "200vh" },
       keyframes: {
         slideIn: {
           "0%": { opacity: "0", transform: "translateX(500px)" },
