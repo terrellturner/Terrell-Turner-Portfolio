@@ -10,6 +10,12 @@
     }
 }
 
+#logo {
+    fill-opacity: 0;
+    paint-order: normal;
+    stroke-linecap: round;
+}
+
 #projects-banner {
     animation-timeline: scroll(root);
 }
