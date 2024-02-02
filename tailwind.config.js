@@ -26,6 +26,11 @@ export default {
       backgroundImage: {
         "contact-bg": "url('./imgs/contact-bg.png')",
         minneapolis: "url('./imgs/minneapolis.jpg')",
+        dice: "url('./imgs/dice.jpg')",
+        "chicken-tikka": "url('./imgs/chicken-tikka.jpg')",
+        fish: "url('./imgs/fish.jpg')",
+        "3dart": "url('./imgs/delorean.jpg')",
+        "spinning-top": "url('./imgs/spinning-top.jpg')",
         "its-a-me": "url('./imgs/minneapolis.jpg')",
       },
       boxShadow: { avatar: "0px 0px 0px 5px #16F275" },

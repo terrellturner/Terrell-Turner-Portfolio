@@ -72,14 +72,14 @@
         </div>
       </div>
       <div id="hero" class="md:min-h-[1000px] h-screen z-20 grid w-full justify-items-center md:w-full items-center">
-        <div class="p-10 m-10 -mt-24 shadow-md min-w-72 xl:w-1/2 md:p-24 grid-col-1 bg-off-white rounded-3xl">
+        <div class="max-w-2xl p-10 m-10 -mt-24 shadow-md min-w-72 xl:w-1/2 md:p-24 grid-col-1 bg-off-white rounded-2xl">
           <h1 class="text-5xl font-extrabold leading-tight md:text-9xl w-38">Hello!</h1>
           <h2 class="pr-5 text-4xl font-extrabold leading-tight ">My name is Terrell.</h2>
           <h3 class="my-6 ml-0.5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h3>
           <button
             class="px-4 py-2 font-black border-solid rounded-full bg-light-green md:h-20 md:w-20 md:hidden">Contact
             Me!</button>
-          <span class="hidden w-full grid-cols-4 gap-5 -ml-1 md:grid">
+          <span class="hidden w-full max-w-md grid-cols-4 gap-5 -ml-1 md:mt-4 md:grid">
             <button aria-label="Email"
               class="w-24 h-24 px-4 py-2 text-4xl font-black border-solid rounded-full bg-light-green"><i
                 class="fa-solid fa-envelope"></i></button>
@@ -98,7 +98,7 @@
       <div id="about"
         class="z-20 grid items-center w-full h-full min-h-screen md:mb-0 xl:p-10 xl:items-start grid-rows-1fr-auto justify-items-center">
         <div
-          class="min-h-[200px] grid w-11/12 p-10 text-center md:min-h-96 xl:py-28 xl:h-full xl:w-4/6 justify-items-center rounded-3xl bg-off-white">
+          class="min-h-[200px] grid w-11/12 p-10 text-center md:min-h-96 xl:py-28 md:h-full xl:w-4/6 justify-items-center rounded-3xl bg-off-white">
           <span class="block w-full text-5xl font-black xl:pl-4 xl:text-left">I love creating stuff.</span>
           <span class="block w-5/6 mt-3 text-center xl:pl-4 xl:pr-40 xl:text-left xl:w-full text-md">
             Whether it's websites, 3D models, or video games, everything I love doing in life revolves using my
@@ -112,13 +112,13 @@
               <div
                 class="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden outline-none justify-items-stretch outline-8 outline-light-green outline-offset-0 card-front bg-dark-grey rounded-3xl">
                 <span class="inline-block object-cover w-full h-full bg-cover bg-minneapolis">
-                  <h6 class="fixed left-0 right-0 block mx-auto text-2xl font-black text-center -bottom-12">
-                    HOMETOWN
+                  <h6 class="fixed left-0 right-0 block mx-auto text-2xl font-black text-center uppercase -bottom-12">
+                    hometown
                   </h6>
                 </span>
               </div>
               <div
-                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full h-full text-center outline-none rounded-3xl card-back bg-off-white outline-8 outline-dark-green outline-offset-0">
+                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full h-full px-2 text-center outline-none rounded-3xl card-back bg-off-white outline-8 outline-dark-green outline-offset-0">
                 <p>I love Minneapolis!</p>
                 <p>Don't you?</p>
               </div>
@@ -126,91 +126,90 @@
           </li>
           <li
             class="md:w-2/3 md:min-w-[12rem] w-64 p-4 py-10 m-auto xl:h-full xl:w-full snap-center h-80 xl:col-span-2 max-w-about-card max-h-80 card-container">
-            <div id="hometown-card" class="relative w-full h-full p-2 rounded-3xl card-content">
+            <div id="hobbies-card" class="relative w-full h-full p-2 rounded-3xl card-content">
               <div
                 class="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden outline-none justify-items-stretch outline-8 outline-light-green outline-offset-0 card-front bg-dark-grey rounded-3xl">
-                <span class="inline-block object-cover w-full h-full bg-cover bg-minneapolis">
-                  <h6 class="fixed left-0 right-0 block mx-auto text-2xl font-black text-center -bottom-12">
-                    HOMETOWN
+                <span class="inline-block object-cover w-full h-full bg-cover bg-dice">
+                  <h6 class="fixed left-0 right-0 block mx-auto text-2xl font-black text-center uppercase -bottom-12">
+                    hobbies
                   </h6>
                 </span>
               </div>
               <div
-                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full h-full text-center outline-none rounded-3xl card-back bg-off-white outline-8 outline-dark-green outline-offset-0">
-                <p>I love Minneapolis!</p>
-                <p>Don't you?</p>
+                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full h-full px-2 text-center outline-none rounded-3xl card-back bg-off-white outline-8 outline-dark-green outline-offset-0">
+                <p>I love way too many things to put here! Mainly, I DM for my Pathfinder friends and love to play
+                  Magic:
+                  The Gathering.</p>
               </div>
             </div>
           </li>
           <li
             class="md:w-2/3 md:min-w-[12rem] w-64 p-4 py-10 m-auto xl:h-full xl:w-full snap-center h-80 xl:col-span-2 max-w-about-card max-h-80 card-container">
-            <div id="hometown-card" class="relative w-full h-full p-2 rounded-3xl card-content">
+            <div id="fav-dish-card" class="relative w-full h-full p-2 rounded-3xl card-content">
               <div
                 class="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden outline-none justify-items-stretch outline-8 outline-light-green outline-offset-0 card-front bg-dark-grey rounded-3xl">
-                <span class="inline-block object-cover w-full h-full bg-cover bg-minneapolis">
-                  <h6 class="fixed left-0 right-0 block mx-auto text-2xl font-black text-center -bottom-12">
-                    HOMETOWN
+                <span class="inline-block object-cover w-full h-full bg-cover bg-chicken-tikka">
+                  <h6 class="fixed left-0 right-0 block mx-auto text-2xl font-black text-center uppercase -bottom-12">
+                    favorite dish
                   </h6>
                 </span>
               </div>
               <div
-                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full h-full text-center outline-none rounded-3xl card-back bg-off-white outline-8 outline-dark-green outline-offset-0">
-                <p>I love Minneapolis!</p>
-                <p>Don't you?</p>
+                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full h-full px-2 text-center outline-none rounded-3xl card-back bg-off-white outline-8 outline-dark-green outline-offset-0">
+                <p>Chicken tikka masala with warm chewy naan bread. Perfection.</p>
               </div>
             </div>
           </li>
           <li
             class="md:w-2/3 md:min-w-[12rem] w-64 p-4 py-10 m-auto xl:h-full xl:w-full snap-center h-80 xl:col-span-2 max-w-about-card max-h-80 card-container">
-            <div id="hometown-card" class="relative w-full h-full p-2 rounded-3xl card-content">
+            <div id="birthday-card" class="relative w-full h-full p-2 rounded-3xl card-content">
               <div
                 class="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden outline-none justify-items-stretch outline-8 outline-light-green outline-offset-0 card-front bg-dark-grey rounded-3xl">
-                <span class="inline-block object-cover w-full h-full bg-cover bg-minneapolis">
-                  <h6 class="fixed left-0 right-0 block mx-auto text-2xl font-black text-center -bottom-12">
-                    HOMETOWN
+                <span class="inline-block object-cover w-full h-full bg-center bg-cover bg-fish ">
+                  <h6 class="fixed left-0 right-0 block mx-auto text-2xl font-black text-center uppercase -bottom-12">
+                    birthday
                   </h6>
                 </span>
               </div>
               <div
-                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full h-full text-center outline-none rounded-3xl card-back bg-off-white outline-8 outline-dark-green outline-offset-0">
-                <p>I love Minneapolis!</p>
-                <p>Don't you?</p>
+                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full h-full px-2 text-center outline-none rounded-3xl card-back bg-off-white outline-8 outline-dark-green outline-offset-0">
+                <p>I was born in March! Despite being a Pisces however, they won't give me a discount at Red Lobster.
+                </p>
               </div>
             </div>
           </li>
           <li
             class="md:w-2/3 md:min-w-[12rem] w-64 p-4 py-10 m-auto xl:h-full xl:w-full snap-center h-80 xl:col-span-2 max-w-about-card max-h-80 card-container">
-            <div id="hometown-card" class="relative w-full h-full p-2 rounded-3xl card-content">
+            <div id="3d-art-card" class="relative w-full h-full p-2 rounded-3xl card-content">
               <div
                 class="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden outline-none justify-items-stretch outline-8 outline-light-green outline-offset-0 card-front bg-dark-grey rounded-3xl">
-                <span class="inline-block object-cover w-full h-full bg-cover bg-minneapolis">
-                  <h6 class="fixed left-0 right-0 block mx-auto text-2xl font-black text-center -bottom-12">
-                    HOMETOWN
+                <span class="inline-block object-cover w-full h-full bg-center bg-cover bg-3dart">
+                  <h6 class="fixed left-0 right-0 block mx-auto text-2xl font-black text-center uppercase -bottom-12">
+                    3d artist
                   </h6>
                 </span>
               </div>
               <div
-                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full h-full text-center outline-none rounded-3xl card-back bg-off-white outline-8 outline-dark-green outline-offset-0">
-                <p>I love Minneapolis!</p>
-                <p>Don't you?</p>
+                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full h-full px-2 text-center outline-none rounded-3xl card-back bg-off-white outline-8 outline-dark-green outline-offset-0">
+                <p>I learned how to model in Blender back in 2017 and never looked back! I love creating landscapes and
+                  am currently learning character modelling.</p>
               </div>
             </div>
           </li>
           <li
             class="md:w-2/3 md:min-w-[12rem] w-64 p-4 py-10 m-auto xl:h-full xl:w-full snap-center h-80 xl:col-span-2 max-w-about-card max-h-80 card-container">
-            <div id="hometown-card" class="relative w-full h-full p-2 rounded-3xl card-content">
+            <div id="movie-card" class="relative w-full h-full p-2 rounded-3xl card-content">
               <div
                 class="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden outline-none justify-items-stretch outline-8 outline-light-green outline-offset-0 card-front bg-dark-grey rounded-3xl">
-                <span class="inline-block object-cover w-full h-full bg-cover bg-minneapolis">
-                  <h6 class="fixed left-0 right-0 block mx-auto text-2xl font-black text-center -bottom-12">
-                    HOMETOWN
+                <span class="inline-block object-cover w-full h-full bg-cover bg-spinning-top bg-origin-padding">
+                  <h6 class="fixed left-0 right-0 block mx-auto text-2xl font-black text-center uppercase -bottom-12">
+                    favorite movie
                   </h6>
                 </span>
               </div>
               <div
-                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full h-full text-center outline-none rounded-3xl card-back bg-off-white outline-8 outline-dark-green outline-offset-0">
-                <p>I love Minneapolis!</p>
-                <p>Don't you?</p>
+                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full h-full px-2 text-center outline-none rounded-3xl card-back bg-off-white outline-8 outline-dark-green outline-offset-0">
+                <p>My favorite movie of all time is Inception. I love the plot, and the action is intense.</p>
               </div>
             </div>
           </li>
@@ -367,3 +366,11 @@
 
 </html>
 <script type="module" src="./main.js"></script>
+
+<!-- 
+  Thank you Unsplash artists!
+  Minneapolis Skyline - https://unsplash.com/photos/curtain-wall-building-during-night-time-tKSYZE5RTzw 
+  Spinning Top - https://unsplash.com/photos/stainless-steel-pyramid-on-white-table-KM3opPullsk
+  Fish - https://unsplash.com/photos/silver-fishes-underwater-YV593oyMKmo
+  TTRPG Dice - https://unsplash.com/photos/green-and-black-dice-on-brown-wooden-table-XIIsv6AshJY
+-->
