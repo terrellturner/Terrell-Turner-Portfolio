@@ -28,10 +28,13 @@ export default {
         minneapolis: "url('./imgs/minneapolis.jpg')",
         dice: "url('./imgs/dice.jpg')",
         "chicken-tikka": "url('./imgs/chicken-tikka.jpg')",
-        fish: "url('./imgs/fish.jpg')",
+        cake: "url('./imgs/cake.jpg')",
         "3dart": "url('./imgs/delorean.jpg')",
         "spinning-top": "url('./imgs/spinning-top.jpg')",
         "its-a-me": "url('./imgs/minneapolis.jpg')",
+        "black-excellence-daily": "url('./imgs/bid.jpg')",
+        portfolio: "url('./imgs/portfolio.jpg')",
+        "light-news": "url('./imgs/lightnews.jpg')",
       },
       boxShadow: { avatar: "0px 0px 0px 5px #16F275" },
       dropShadow: {
@@ -39,7 +42,7 @@ export default {
         "title-effect": "0 -20px 0px #16F275",
       },
       fontFamily: { roboto: ['"Roboto"'] },
-      height: { "screen-2xl": "200vh" },
+      height: { "screen-2xl": "200vh", "about-cards": "26rem" },
       keyframes: {
         slideIn: {
           "0%": { opacity: "0", transform: "translateX(500px)" },
@@ -54,16 +57,16 @@ export default {
           to: { transform: "translateX(10rem)" },
         },
         techScrollDesktop: {
-          from: { transform: "translateY(-20rem) rotate(90deg)" },
+          from: { transform: "translateY(-40rem) rotate(90deg)" },
           to: { transform: "translateY(10rem) rotate(90deg)" },
         },
         skillScrollMobile: {
           from: { transform: "translateX(-20rem)" },
-          to: { transform: "translateX(10rem)" },
+          to: { transform: "translateX(50rem)" },
         },
         skillScrollDesktop: {
-          from: { transform: "translateY(-10rem) rotate(-90deg)" },
-          to: { transform: "translateY(10rem) rotate(-90deg)" },
+          from: { transform: "translateY(0) rotate(-90deg)" },
+          to: { transform: "translateY(70rem) rotate(-90deg)" },
         },
       },
       margin: {
@@ -71,9 +74,7 @@ export default {
       },
       maxWidth: {
         "screen-3xl": "1920px",
-        "about-card": "15rem",
-
-        "about-card-sm": "12rem",
+        "about-card": "12rem",
       },
       strokeWidth: {
         25: "25",

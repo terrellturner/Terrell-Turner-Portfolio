@@ -1,52 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  /* 
+  
+  Thank you Unsplash artists! 
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+  Minneapolis Skyline - https: //unsplash.com/photos/curtain-wall-building-during-night-time-tKSYZE5RTzw 
+  Spinning Top - https: //unsplash.com/photos/stainless-steel-pyramid-on-white-table-KM3opPullsk
+  Cake - https: //unsplash.com/photos/cake-with-lit-sparkling-stick-ys8qztLjJyg
+  TTRPG Dice - https: //unsplash.com/photos/green-and-black-dice-on-brown-wooden-table-XIIsv6AshJY
+  
+  */
 
-@layer base {
-    html {
-        font-family: "Poppins", system-ui, sans-serif;
-    }
-}
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-#logo {
-    fill-opacity: 0;
-    paint-order: normal;
-    stroke-linecap: round;
-}
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
 
-#projects-banner {
-    animation-timeline: scroll(root);
-}
+  @layer base {
+      html {
+          font-family: "Poppins", system-ui, sans-serif;
+      }
+  }
 
-#skills-banner {
-    animation-timeline: scroll(root);
-    animation-direction: reverse;
-}
+  #logo {
+      fill-opacity: 0;
+      paint-order: normal;
+      stroke-linecap: round;
+  }
 
-.card-content {
-    transition: transform 1s;
-    transform-style: preserve-3d;
-}
+  #projects-banner {
+      animation-timeline: scroll(root);
+  }
 
-.card-front,
-.card-back {
-    backface-visibility: hidden;
-}
+  #skills-banner {
+      animation-timeline: scroll(root);
+      animation-direction: reverse;
+  }
 
-.card-back {
-    transform: rotateY(.5turn);
-}
+  .card-content {
+      transition: transform 1s;
+      transform-style: preserve-3d;
+  }
 
-@media (min-width: 300px) {
-    .card-container:hover .card-content {
-        transform: rotateY(.5turn) scale(115%);
-    }
-}
+  .card-front,
+  .card-back {
+      backface-visibility: hidden;
+      transform: rotateX(0deg)
+  }
 
-@media (min-width: 1024px) {
-    .card-container:hover .card-content {
-        transform: rotateY(.5turn) scale(120%);
-    }
-}
+  .card-back {
+      transform: rotateY(.5turn);
+  }
+
+  @media (min-width: 300px) {
+      .card-container:hover .card-content {
+          transform: rotateY(.5turn) scale(115%);
+      }
+  }
+
+  @media (min-width: 1024px) {
+      .card-container:hover .card-content {
+          transform: rotateY(.5turn) scale(120%);
+      }
+  }

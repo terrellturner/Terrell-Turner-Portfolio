@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Howdy partner! Whatcha lookin' for? Drop me a line! terrell@rellsoft.dev -->
 
 <head>
   <meta charset="UTF-8">
@@ -65,152 +66,175 @@
   <main class="relative grid w-full h-full m-auto overflow-hidden max-w-screen-3xl">
     <section aria-label="About Me" id="hero-about"
       class="relative grid content-between w-full min-h-screen grid-cols-1 mx-auto mt-24 mb-12 overflow-hidden md:items-center place-items-center justify-items-center bg-off-white md:max-w-screen-3xl">
-      <div aria-label="Background image" class="fixed w-full h-screen overflow-hidden -top-0 max-w-screen-3xl">
+      <div aria-label="Background image"
+        class="fixed w-full h-screen overflow-hidden -bottom-10 md:bottom-0 max-w-screen-3xl">
         <div class="relative z-40 w-full h-full overflow-hidden ">
-          <img class="absolute z-50 object-cover -top-96 h-screen-2xl md:mt-12 md:w-screen " src="./imgs/3dlandlit.webp"
+          <img class="absolute z-50 object-cover -top-52 md:-top-[40rem] h-screen-2xl md:mt-12 md:w-screen "
+            src="./imgs/3dlandlit.webp"
             alt="A transparent image of a low-poly 3D mountain made by me, Terrell Turner. One side is illuminated by sunlight, the other side is lit by a peaceful green glow.">
         </div>
       </div>
       <div id="hero" class="md:min-h-[1000px] h-screen z-20 grid w-full justify-items-center md:w-full items-center">
         <div class="max-w-2xl p-10 m-10 -mt-24 shadow-md min-w-72 xl:w-1/2 md:p-24 grid-col-1 bg-off-white rounded-2xl">
-          <h1 class="text-5xl font-extrabold leading-tight md:text-9xl w-38">Hello!</h1>
-          <h2 class="pr-5 text-4xl font-extrabold leading-tight ">My name is Terrell.</h2>
-          <h3 class="my-6 ml-0.5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h3>
+          <h1>
+            <span class="text-6xl font-extrabold leading-tight md:text-9xl w-38">Hello!</span>
+            <span class="block text-xl font-extrabold leading-tight">My name is Terrell. I'm a freelance web
+              developer.</span>
+          </h1>
+          <h3 class="my-6 ml-0.5">I use tools such as <span
+              class="font-black underline decoration-4 decoration-light-green">React</span>, <span
+              class="font-black underline decoration-4 decoration-light-green">TypeScript</span>, and
+            <span class="font-black underline decoration-4 decoration-light-green">Three.js</span> to help build and
+            grow your next project!
+          </h3>
           <button
             class="px-4 py-2 font-black border-solid rounded-full bg-light-green md:h-20 md:w-20 md:hidden">Contact
             Me!</button>
-          <span class="hidden w-full max-w-md grid-cols-4 gap-5 -ml-1 md:mt-4 md:grid">
-            <button aria-label="Email"
-              class="w-24 h-24 px-4 py-2 text-4xl font-black border-solid rounded-full bg-light-green"><i
-                class="fa-solid fa-envelope"></i></button>
-            <button aria-label="LinkedIn"
-              class="w-24 h-24 px-4 py-2 text-4xl font-black border-solid rounded-full bg-light-green"><i
-                class="fa-brands fa-linkedin"></i></button>
-            <button aria-label="Github"
-              class="w-24 h-24 px-4 py-2 text-4xl font-black border-solid rounded-full bg-light-green"><i
-                class="fa-brands fa-github"></i></button>
-            <button aria-label="X (Twitter)"
-              class="w-24 h-24 px-4 py-2 text-4xl font-black border-solid rounded-full bg-light-green"><i
-                class="fa-brands fa-x-twitter"></i></button>
-          </span>
+          <ul class="hidden w-full max-w-md grid-cols-4 gap-5 -ml-1 md:mt-4 md:grid">
+            <li><button aria-label="Email"
+                class="w-24 h-24 px-4 py-2 text-4xl font-black border-solid rounded-full bg-light-green"><i
+                  class="fa-solid fa-envelope"></i></button></li>
+            <li><button aria-label="LinkedIn"
+                class="w-24 h-24 px-4 py-2 text-4xl font-black border-solid rounded-full bg-light-green"><i
+                  class="fa-brands fa-linkedin"></i></button></li>
+            <li><button aria-label="Github"
+                class="w-24 h-24 px-4 py-2 text-4xl font-black border-solid rounded-full bg-light-green"><i
+                  class="fa-brands fa-github"></i></button></li>
+            <li><button aria-label="X (Twitter)"
+                class="w-24 h-24 px-4 py-2 text-4xl font-black border-solid rounded-full bg-light-green"><i
+                  class="fa-brands fa-x-twitter"></i></button></li>
+          </ul>
         </div>
       </div>
       <div id="about"
-        class="z-20 grid items-center w-full h-full min-h-screen md:mb-0 xl:p-10 xl:items-start grid-rows-1fr-auto justify-items-center">
+        class="z-20 grid items-center w-full h-full pb-4 md:pb-0 md:min-h-screen md:mb-0 xl:p-10 xl:items-start grid-rows-1fr-auto justify-items-center">
         <div
-          class="min-h-[200px] grid w-11/12 p-10 text-center md:min-h-96 xl:py-28 md:h-full xl:w-4/6 justify-items-center rounded-3xl bg-off-white">
+          class="min-h-[200px] mb-20 grid w-11/12 p-10 text-center md:min-h-96 xl:py-28 md:h-auto xl:w-4/6 justify-items-center rounded-3xl bg-off-white">
           <span class="block w-full text-5xl font-black xl:pl-4 xl:text-left">I love creating stuff.</span>
           <span class="block w-5/6 mt-3 text-center xl:pl-4 xl:pr-40 xl:text-left xl:w-full text-md">
-            Whether it's websites, 3D models, or video games, everything I love doing in life revolves using my
+            Whether it's websites, 3D models, or video games, everything I love doing in life revolves around using my
             imagination. Flip through the cards below to learn about some of my favorite things!</span>
         </div>
         <ul id="about-me-cards"
-          class="grid w-full h-full md:min-h-[800px] grid-flow-col-dense gap-10 px-10 overflow-x-scroll overflow-y-hidden xl:w-2/3 md:overflow-x-hidden xl:py-20 xl:grid-flow-col xl:my-0 xl:gap-12 snap-x scroll-smooth md:grid-rows-2 py-10">
-          <li
-            class="md:w-2/3 md:min-w-[12rem] w-64 p-4 py-10 m-auto xl:h-full xl:w-full snap-center h-80 xl:col-span-2 max-w-about-card max-h-80 card-container">
-            <div id="hometown-card" class="relative w-full h-full p-2 rounded-3xl card-content">
-              <div
-                class="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden outline-none justify-items-stretch outline-8 outline-light-green outline-offset-0 card-front bg-dark-grey rounded-3xl">
-                <span class="inline-block object-cover w-full h-full bg-cover bg-minneapolis">
-                  <h6 class="fixed left-0 right-0 block mx-auto text-2xl font-black text-center uppercase -bottom-12">
-                    hometown
-                  </h6>
-                </span>
-              </div>
-              <div
-                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full h-full px-2 text-center outline-none rounded-3xl card-back bg-off-white outline-8 outline-dark-green outline-offset-0">
-                <p>I love Minneapolis!</p>
-                <p>Don't you?</p>
-              </div>
+          class="justify-items-center grid w-full md:min-h-[50rem] xl:h-full grid-flow-col gap-10 px-10 py-10 overflow-x-scroll overflow-y-hidden xl:w-2/3 md:overflow-x-hidden xl:grid-flow-col xl:my-0 xl:gap-12 snap-x scroll-smooth md:grid-rows-2 ">
+          <li class="md:w-1/3 md:min-w-[12rem] w-64 p-2 px-0 xl:w-full snap-center  max-w-about-card card-container ">
+            <div id="hometown-card" class="relative w-full p-2 rounded-3xl card-content">
+              <figure class="grid grid-rows-auto-1fr card-front">
+                <div
+                  class="top-0 bottom-0 left-0 right-0 w-full h-[18rem] overflow-hidden outline-none justify-items-stretch outline-4 outline-light-green outline-offset-0 bg-dark-grey rounded-3xl">
+                  <span class="inline-block object-cover w-full h-full bg-center bg-cover bg-minneapolis">
+                  </span>
+                </div>
+                <h6 class="z-30 mx-auto mt-5 text-2xl font-black text-center uppercase ">
+                  hometown
+                </h6>
+              </figure>
+
+              <figure
+                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full px-2 text-center outline-none h-5/6 rounded-3xl card-back bg-off-white outline-4 outline-dark-green outline-offset-0">
+                <p>Born and raised in Minneapolis, MN!</p>
+                <p>No, it doesn't snow all the time. Yes, we do have special Prince-themed highway signs!</p>
+              </figure>
             </div>
           </li>
-          <li
-            class="md:w-2/3 md:min-w-[12rem] w-64 p-4 py-10 m-auto xl:h-full xl:w-full snap-center h-80 xl:col-span-2 max-w-about-card max-h-80 card-container">
-            <div id="hobbies-card" class="relative w-full h-full p-2 rounded-3xl card-content">
-              <div
-                class="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden outline-none justify-items-stretch outline-8 outline-light-green outline-offset-0 card-front bg-dark-grey rounded-3xl">
-                <span class="inline-block object-cover w-full h-full bg-cover bg-dice">
-                  <h6 class="fixed left-0 right-0 block mx-auto text-2xl font-black text-center uppercase -bottom-12">
-                    hobbies
-                  </h6>
-                </span>
-              </div>
-              <div
-                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full h-full px-2 text-center outline-none rounded-3xl card-back bg-off-white outline-8 outline-dark-green outline-offset-0">
+          <li class="md:w-1/3 md:min-w-[12rem] w-64 p-2 px-0 xl:w-full snap-center  max-w-about-card card-container ">
+            <div id="fav-movie-card" class="relative w-full p-2 rounded-3xl card-content">
+              <figure class="grid grid-rows-auto-1fr card-front">
+                <div
+                  class="top-0 bottom-0 left-0 right-0 w-full h-[18rem] overflow-hidden outline-none justify-items-stretch outline-4 outline-light-green outline-offset-0 bg-dark-grey rounded-3xl">
+                  <span class="inline-block object-cover w-full h-full bg-center bg-cover bg-spinning-top ">
+                  </span>
+                </div>
+                <h6 class="z-30 mx-auto mt-5 text-2xl font-black text-center uppercase ">
+                  favorite movie
+                </h6>
+              </figure>
+
+              <figure
+                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full px-2 text-center outline-none h-5/6 rounded-3xl card-back bg-off-white outline-4 outline-dark-green outline-offset-0">
+                <p>My favorite movie of all time is Inception. I love the plot, and the action is intense.</p>
+              </figure>
+            </div>
+          </li>
+          <li class="md:w-1/3 md:min-w-[12rem] w-64 p-2 px-0 xl:w-full snap-center  max-w-about-card card-container ">
+            <div id="hobbies-card" class="relative w-full p-2 rounded-3xl card-content">
+              <figure class="grid grid-rows-auto-1fr card-front">
+                <div
+                  class="top-0 bottom-0 left-0 right-0 w-full h-[18rem] overflow-hidden outline-none justify-items-stretch outline-4 outline-light-green outline-offset-0 bg-dark-grey rounded-3xl">
+                  <span class="inline-block object-cover w-full h-full bg-center bg-cover bg-dice">
+                  </span>
+                </div>
+                <h6 class="z-30 mx-auto mt-5 text-2xl font-black text-center uppercase ">
+                  hobbies
+                </h6>
+              </figure>
+
+              <figure
+                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full px-2 text-center outline-none h-5/6 rounded-3xl card-back bg-off-white outline-4 outline-dark-green outline-offset-0">
                 <p>I love way too many things to put here! Mainly, I DM for my Pathfinder friends and love to play
                   Magic:
                   The Gathering.</p>
-              </div>
+              </figure>
             </div>
           </li>
-          <li
-            class="md:w-2/3 md:min-w-[12rem] w-64 p-4 py-10 m-auto xl:h-full xl:w-full snap-center h-80 xl:col-span-2 max-w-about-card max-h-80 card-container">
-            <div id="fav-dish-card" class="relative w-full h-full p-2 rounded-3xl card-content">
-              <div
-                class="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden outline-none justify-items-stretch outline-8 outline-light-green outline-offset-0 card-front bg-dark-grey rounded-3xl">
-                <span class="inline-block object-cover w-full h-full bg-cover bg-chicken-tikka">
-                  <h6 class="fixed left-0 right-0 block mx-auto text-2xl font-black text-center uppercase -bottom-12">
-                    favorite dish
-                  </h6>
-                </span>
-              </div>
-              <div
-                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full h-full px-2 text-center outline-none rounded-3xl card-back bg-off-white outline-8 outline-dark-green outline-offset-0">
+          <li class="md:w-1/3 md:min-w-[12rem] w-64 p-2 px-0 xl:w-full snap-center  max-w-about-card card-container ">
+            <div id="birthday-card" class="relative w-full p-2 rounded-3xl card-content">
+              <figure class="grid grid-rows-auto-1fr card-front">
+                <div
+                  class="top-0 bottom-0 left-0 right-0 w-full h-[18rem] overflow-hidden outline-none justify-items-stretch outline-4 outline-light-green outline-offset-0 bg-dark-grey rounded-3xl">
+                  <span class="inline-block object-cover w-full h-full bg-center bg-cover bg-cake">
+                  </span>
+                </div>
+                <h6 class="z-30 mx-auto mt-5 text-2xl font-black text-center uppercase ">
+                  birthday
+                </h6>
+              </figure>
+
+              <figure
+                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full px-2 text-center outline-none h-5/6 rounded-3xl card-back bg-off-white outline-4 outline-dark-green outline-offset-0">
+                <p>I was born on March 4th! However, despite being a Pisces, they still won't give me a coupon at Red
+                  Lobster.</p>
+
+              </figure>
+            </div>
+          </li>
+          <li class="md:w-1/3 md:min-w-[12rem] w-64 p-2 px-0 xl:w-full snap-center  max-w-about-card card-container ">
+            <div id="fav-dish-card" class="relative w-full p-2 rounded-3xl card-content">
+              <figure class="grid grid-rows-auto-1fr card-front">
+                <div
+                  class="top-0 bottom-0 left-0 right-0 w-full h-[18rem] overflow-hidden outline-none justify-items-stretch outline-4 outline-light-green outline-offset-0 bg-dark-grey rounded-3xl">
+                  <span class="inline-block object-cover w-full h-full bg-center bg-cover bg-chicken-tikka">
+                  </span>
+                </div>
+                <h6 class="z-30 mx-auto mt-5 text-2xl font-black text-center uppercase ">
+                  favorite dish
+                </h6>
+              </figure>
+
+              <figure
+                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full px-2 text-center outline-none h-5/6 rounded-3xl card-back bg-off-white outline-4 outline-dark-green outline-offset-0">
                 <p>Chicken tikka masala with warm chewy naan bread. Perfection.</p>
-              </div>
+              </figure>
             </div>
           </li>
-          <li
-            class="md:w-2/3 md:min-w-[12rem] w-64 p-4 py-10 m-auto xl:h-full xl:w-full snap-center h-80 xl:col-span-2 max-w-about-card max-h-80 card-container">
-            <div id="birthday-card" class="relative w-full h-full p-2 rounded-3xl card-content">
-              <div
-                class="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden outline-none justify-items-stretch outline-8 outline-light-green outline-offset-0 card-front bg-dark-grey rounded-3xl">
-                <span class="inline-block object-cover w-full h-full bg-center bg-cover bg-fish ">
-                  <h6 class="fixed left-0 right-0 block mx-auto text-2xl font-black text-center uppercase -bottom-12">
-                    birthday
-                  </h6>
-                </span>
-              </div>
-              <div
-                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full h-full px-2 text-center outline-none rounded-3xl card-back bg-off-white outline-8 outline-dark-green outline-offset-0">
-                <p>I was born in March! Despite being a Pisces however, they won't give me a discount at Red Lobster.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li
-            class="md:w-2/3 md:min-w-[12rem] w-64 p-4 py-10 m-auto xl:h-full xl:w-full snap-center h-80 xl:col-span-2 max-w-about-card max-h-80 card-container">
-            <div id="3d-art-card" class="relative w-full h-full p-2 rounded-3xl card-content">
-              <div
-                class="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden outline-none justify-items-stretch outline-8 outline-light-green outline-offset-0 card-front bg-dark-grey rounded-3xl">
-                <span class="inline-block object-cover w-full h-full bg-center bg-cover bg-3dart">
-                  <h6 class="fixed left-0 right-0 block mx-auto text-2xl font-black text-center uppercase -bottom-12">
-                    3d artist
-                  </h6>
-                </span>
-              </div>
-              <div
-                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full h-full px-2 text-center outline-none rounded-3xl card-back bg-off-white outline-8 outline-dark-green outline-offset-0">
+          <li class="md:w-1/3 md:min-w-[12rem] w-64 p-2 px-0 xl:w-full snap-center  max-w-about-card card-container ">
+            <div id="3d-art-card" class="relative w-full p-2 rounded-3xl card-content">
+              <figure class="grid grid-rows-auto-1fr card-front">
+                <div
+                  class="top-0 bottom-0 left-0 right-0 w-full h-[18rem] overflow-hidden outline-none justify-items-stretch outline-4 outline-light-green outline-offset-0 bg-dark-grey rounded-3xl">
+                  <span class="inline-block object-cover w-full h-full bg-center bg-cover bg-3dart ">
+                  </span>
+                </div>
+                <h6 class="z-30 mx-auto mt-5 text-2xl font-black text-center uppercase ">
+                  3d artist
+                </h6>
+              </figure>
+
+              <figure
+                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full px-2 text-center outline-none h-5/6 rounded-3xl card-back bg-off-white outline-4 outline-dark-green outline-offset-0">
                 <p>I learned how to model in Blender back in 2017 and never looked back! I love creating landscapes and
                   am currently learning character modelling.</p>
-              </div>
-            </div>
-          </li>
-          <li
-            class="md:w-2/3 md:min-w-[12rem] w-64 p-4 py-10 m-auto xl:h-full xl:w-full snap-center h-80 xl:col-span-2 max-w-about-card max-h-80 card-container">
-            <div id="movie-card" class="relative w-full h-full p-2 rounded-3xl card-content">
-              <div
-                class="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden outline-none justify-items-stretch outline-8 outline-light-green outline-offset-0 card-front bg-dark-grey rounded-3xl">
-                <span class="inline-block object-cover w-full h-full bg-cover bg-spinning-top bg-origin-padding">
-                  <h6 class="fixed left-0 right-0 block mx-auto text-2xl font-black text-center uppercase -bottom-12">
-                    favorite movie
-                  </h6>
-                </span>
-              </div>
-              <div
-                class="absolute top-0 bottom-0 left-0 right-0 grid content-center w-full h-full px-2 text-center outline-none rounded-3xl card-back bg-off-white outline-8 outline-dark-green outline-offset-0">
-                <p>My favorite movie of all time is Inception. I love the plot, and the action is intense.</p>
-              </div>
+              </figure>
             </div>
           </li>
         </ul>
@@ -231,38 +255,55 @@
       </div>
       <div aria-label="My Projects" id="projects"
         class="grid h-full grid-cols-1 gap-12 py-10 xl:grid-cols-2 md:place-content-center">
-        <figure class="w-5/6 h-48 m-auto md:h-full">
+        <figure class="w-5/6 h-48 m-auto md:h-full md:w-2/3 ">
           <div
-            class="grid w-full h-full grid-cols-2 p-5 mx-auto leading-4 border-2 md:gap-5 items-c justify-items-centerenter md:grid-cols-1 rounded-3xl border-light-green">
-            <span class="h-full rounded-lg md:h-52 md:w-full bg-dark-grey"></span>
+            class="grid w-full h-full grid-cols-2 p-5 mx-auto border-2 md:gap-5 items-c justify-items-centerenter md:grid-cols-1 rounded-3xl border-light-green">
+            <span class="h-full bg-center bg-cover rounded-lg md:h-52 md:w-full bg-portfolio"></span>
             <article class="grid grid-cols-1 gap-5 m-auto">
-              <h5>Project 1</h5>
-              <p class="hidden md:inline-grid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ex.</p>
+              <span
+                class="grid items-center grid-flow-row gap-2 text-center md:text-justify md:gap-3 md:grid-flow-col auto-cols-auto w-fit">
+                <h5>2024 Portfolio</h5>
+                <span class="font-bold uppercase text-light-green">new!</span>
+              </span>
+              <p class="hidden md:inline-grid">The portfolio you're looking at right now! Written in Vanilla JS as a
+                demonstration of my foundational web development skills.</p>
             </article>
           </div>
         </figure>
-        <figure class="w-5/6 h-48 m-auto md:h-full">
+        <figure class="w-5/6 h-48 m-auto md:h-full md:w-2/3 ">
           <div
-            class="grid w-full h-full grid-cols-2 p-5 mx-auto leading-4 border-2 md:gap-5 items-c justify-items-centerenter md:grid-cols-1 rounded-3xl border-light-green">
-            <span class="h-full rounded-lg md:h-52 md:w-full bg-dark-grey"></span>
+            class="grid w-full h-full grid-cols-2 p-5 mx-auto border-2 md:gap-5 items-c justify-items-centerenter md:grid-cols-1 rounded-3xl border-light-green">
+            <span class="h-full bg-center bg-cover rounded-lg md:h-52 md:w-full bg-light-news"></span>
             <article class="grid grid-cols-1 gap-5 m-auto">
-              <h5>Project 2</h5>
-              <p class="hidden md:inline-grid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ex.</p>
+              <span
+                class="grid items-center grid-flow-row gap-2 text-center md:text-justify md:gap-3 md:grid-flow-col auto-cols-auto w-fit">
+                <h5>LightNews</h5>
+                <span class="text-xs font-bold uppercase text-dark-green">Coming Soon</span>
+              </span>
+              <p class="hidden md:inline-grid">An SPA written with React and Node.js designed to give you news quickly
+                and consistently, with no ads or interruptions.</p>
             </article>
           </div>
         </figure>
-        <figure class="w-5/6 h-48 m-auto md:h-full">
+        <figure class="w-5/6 h-48 m-auto md:h-full md:w-2/3 ">
           <div
-            class="grid w-full h-full grid-cols-2 p-5 mx-auto leading-4 border-2 md:gap-5 items-c justify-items-centerenter md:grid-cols-1 rounded-3xl border-light-green">
-            <span class="h-full rounded-lg md:h-52 md:w-full bg-dark-grey"></span>
+            class="grid w-full h-full grid-cols-2 p-5 mx-auto border-2 md:gap-5 items-c justify-items-centerenter md:grid-cols-1 rounded-3xl border-light-green">
+            <span
+              class="h-full bg-right bg-cover rounded-lg md:bg-center md:h-52 md:w-full bg-black-excellence-daily"></span>
             <article class="grid grid-cols-1 gap-5 m-auto">
-              <h5>Project 3</h5>
-              <p class="hidden md:inline-grid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ex.</p>
+              <span
+                class="grid items-center grid-flow-row gap-2 text-center md:text-justify md:gap-3 md:grid-flow-col auto-cols-auto w-fit">
+                <h5>Black Intellect Daily</h5>
+                <span class="text-xs font-bold uppercase text-dark-green">Coming Soon</span>
+              </span>
+              <p class="hidden md:inline-grid">A curated library of quotes from Black leaders across many generations
+                served daily, with an
+                emphasis on hope, love, and collective power.</p>
             </article>
           </div>
         </figure>
         <button
-          class=" grid  min-w-[20rem] w-1/2 xl:w-5/6 m-auto leading-4 border-2 xl:p-5 md:gap-5 items-c justify-items-centerenter md:grid-cols-1 rounded-3xl border-light-green md:h-full font-bold md:text-2xl">
+          class=" grid min-w-[20rem] md:min-w-0 w-1/2 md:w-2/3 m-auto leading-4 border-2 xl:p-5 md:gap-5 items-c justify-items-centerenter md:grid-cols-1 rounded-3xl border-light-green md:h-full font-bold md:text-2xl">
           <span class="hidden h-full rounded-lg xl:block md:h-52 md:w-full bg-dark-grey"></span>
           <span class="grid grid-cols-1 gap-5 p-5 m-auto">
             <h5>See more on my blog!</h5>
@@ -327,7 +368,9 @@
         class="z-10 py-8 m-auto text-6xl font-black leading-snug animate-skillScrollMobile md:animate-skillScrollDesktop md:-mb-32 md:ml-4 md:py-0 md:m-0 md:self-end whitespace-nowrap drop-shadow-title-effect md:-rotate-90 ">
         <span>SKILLS</span><span> + </span><span>TECH</span><span> + </span><span>SKILLS</span><span> +
         </span><span>TECH</span><span> + </span><span>SKILLS</span><span> + </span><span>TECH</span><span> +
-        </span><span>SKILLS</span><span> + </span><span>TECH</span><span> + </span>
+        </span><span>SKILLS</span><span> + </span><span>TECH</span><span> + </span></span><span>SKILLS</span><span> +
+        </span><span>TECH</span><span> + </span></span><span>SKILLS</span><span> + </span><span>TECH</span><span> +
+        </span>
       </div>
 
     </section>
@@ -337,12 +380,18 @@
       class="z-30 grid w-full h-full grid-cols-1 gap-5 px-5 py-20 mx-auto bg-no-repeat bg-cover place-items-center place-content-center">
       <div
         class="grid items-center h-full max-w-sm p-10 px-5 shadow-md md:max-w-xl rounded-3xl md:px-10 md:py-20 md:w-3/4 xl:1/3 bg-off-white">
-        <h4 class="w-full px-10 py-6 text-4xl font-black text-center text-dark-grey">Want to get in
+        <h4 class="w-full px-5 py-6 text-5xl font-black text-center text-dark-grey">Want to get in
           touch?</h4>
-        <div class="w-full h-full p-4 px-8 mx-auto indent-8">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quas blanditiis quibusdam cum aliquid nostrum
-          quisquam ea inventore, totam praesentium modi pariatur, id delectus similique laborum expedita nihil, alias
-          amet?
+        <div class="w-full h-full p-4 px-4 mx-auto text-center md:px-16 indent-8 md:text-left">I cover a wide range of
+          areas such
+          as <span class="font-black underline decoration-4 decoration-light-green">content creation</span>,
+          <span class="font-black underline decoration-4 decoration-light-green">marketing management</span>, <span
+            class="font-black underline decoration-4 decoration-light-green">web development & design</span>, as well
+          as <span class="font-black underline decoration-4 decoration-light-green">web hosting management</span>.
+          I bring an affordable, tailored approach to handling these critical components of your online presence so that
+          you can concentrate on the
+          big
+          picture. Let's connect today!
         </div>
         <span
           class="grid content-center h-full grid-cols-2 gap-6 p-6 m-auto md:px-0 px-14 w-46 md:w-56 place-content-center justify-items-center">
@@ -358,19 +407,12 @@
       </div>
     </section>
   </main>
-  <footer class="z-30 grid content-center justify-center w-full h-6 mx-auto text-xs font-light bg-off-white">Built from
+  <footer class="z-30 grid content-center justify-center w-full h-6 mx-auto text-xs font-light bg-off-white">Lovingly
+    built from
     scratch by
-    Terrell Turner.
+    Terrell Turner. &#128154;
   </footer>
 </body>
 
 </html>
 <script type="module" src="./main.js"></script>
-
-<!-- 
-  Thank you Unsplash artists!
-  Minneapolis Skyline - https://unsplash.com/photos/curtain-wall-building-during-night-time-tKSYZE5RTzw 
-  Spinning Top - https://unsplash.com/photos/stainless-steel-pyramid-on-white-table-KM3opPullsk
-  Fish - https://unsplash.com/photos/silver-fishes-underwater-YV593oyMKmo
-  TTRPG Dice - https://unsplash.com/photos/green-and-black-dice-on-brown-wooden-table-XIIsv6AshJY
--->
