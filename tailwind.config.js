@@ -8,6 +8,7 @@ export default {
       "dim-green": "#12A652",
       "off-white": "#F2F2F2",
       "dark-grey": "#262626",
+      "steel-black": "#0c0e12",
     },
     gridTemplateRows: {
       "1fr-auto": "auto 1fr",
@@ -40,6 +41,7 @@ export default {
       dropShadow: {
         "title-effect-desktop": "0 -20px 0px #027333",
         "title-effect": "0 -20px 0px #16F275",
+        "title-effect-dark-mode": "0 -20px 0px #027333",
       },
       fontFamily: { roboto: ['"Roboto"'] },
       height: { "screen-2xl": "200vh", "about-cards": "26rem" },

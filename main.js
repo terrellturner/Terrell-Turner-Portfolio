@@ -1,57 +1,44 @@
-import { library, icon } from "@fortawesome/fontawesome-svg-core";
-import { faReact } from "@fortawesome/free-brands-svg-icons";
-
-const techEls = document.getElementsByClassName("tech-skill-item");
-
-const techNames = [
-  "JavaScript",
-  "HTML+CSS",
-  "C#",
-  "React",
-  "Vue",
-  "Figma",
-  "InDesign",
-  "",
-];
-
 const siteBody = document.getElementsByTagName("body")[0];
+const nav = siteBody.querySelector("nav");
+const mobileNav = nav.querySelector("#mobile-nav");
+
+const navList = ["home", "about", "projects", "skills", "contact"];
+
+//Nav event delegate
+nav.addEventListener("click", (el) => {
+  navList.forEach((link) => {
+    if (el.target.classList.contains(`${link}`)) {
+      closeMobileNav();
+
+      siteBody
+        .getElementsByTagName("main")[0]
+        .querySelector(`#${link}`)
+        .scrollIntoView({ behavior: "smooth" });
+    } else {
+      return;
+    }
+  });
+});
 
 //Open mobile nav
-
-const mobileNav = document.getElementById("mobile-nav");
-
 const mobileNavHamburger = document
   .getElementById("hamburger")
-  .addEventListener("click", mobileNavTap);
-
-function mobileNavTap() {
-  //Check <body> for fixed
-  if (!siteBody.classList.contains("fixed")) {
-    mobileNav.classList.remove("animate-slideOut");
-    openMobileNav();
-  } else {
-    mobileNav.classList.remove("animate-slideIn");
-    closeMobileNav();
-  }
-}
+  .addEventListener("click", () => {
+    if (
+      !siteBody.classList.contains("fixed") ? openMobileNav() : closeMobileNav()
+    );
+  });
 
 function openMobileNav() {
-  mobileNav.classList.add("animate-slideIn");
-
-  toggleMobileNavContactBtns();
-
+  mobileNav.classList.remove("animate-slideOut");
   siteBody.classList.remove("relative");
+  mobileNav.classList.add("animate-slideIn");
   siteBody.classList.add("fixed");
 }
 
 function closeMobileNav() {
-  mobileNav.classList.add("animate-slideOut");
-
+  mobileNav.classList.remove("animate-slideIn");
   siteBody.classList.remove("fixed");
+  mobileNav.classList.add("animate-slideOut");
   siteBody.classList.add("relative");
-}
-
-function toggleMobileNavContactBtns() {
-  mobileNav.querySelector("#mobileContactBtns").classList.add("grid");
-  mobileNav.querySelector("#mobileContactBtns").classList.remove("hidden");
 }
