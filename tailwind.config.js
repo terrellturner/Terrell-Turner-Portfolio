@@ -17,6 +17,7 @@ export default {
     },
     extend: {
       animation: {
+        fadeIn: "fadeIn 3s ease 0s 1 normal forwards",
         slideIn: "slideIn .5s ease 0s 1 normal forwards",
         slideOut: "slideOut .5s ease 0s 1 normal forwards",
         techScrollMobile: "techScrollMobile linear",
@@ -46,6 +47,10 @@ export default {
       fontFamily: { roboto: ['"Roboto"'] },
       height: { "screen-2xl": "200vh", "about-cards": "26rem" },
       keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
         slideIn: {
           "0%": { opacity: "0", transform: "translateX(500px)" },
           "100%": { opacity: "1", transform: "translateX(0)" },
