@@ -33,16 +33,19 @@ nav.addEventListener("click", (el) => {
 });
 
 function navScrollHandler() {
+  // Sets nav as relative once it hits the top of the window
   if (navScrollThreshold < 0.00025) {
     header.classList.remove("transition-transform");
     header.classList.remove("fixed");
     header.classList.add("relative");
   }
 
+  // On page down
   if (pageScrollPos > navScrollThreshold && pageScrollPos > navThreshold) {
     header.classList.add("-translate-y-24");
     header.classList.remove("relative");
     header.classList.add("fixed");
+    // On page up
   } else if (pageScrollPos < navScrollThreshold) {
     header.classList.add("transition-transform");
     header.classList.remove("-translate-y-24");
