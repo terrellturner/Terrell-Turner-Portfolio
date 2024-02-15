@@ -43,8 +43,9 @@
 
   .card-front,
   .card-back {
+      transform: rotateX(0deg);
       backface-visibility: hidden;
-      transform: rotateX(0deg)
+      will-change: transform;
   }
 
   .card-back {
